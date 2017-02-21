@@ -1,0 +1,36 @@
+body{
+	background-color: #F5F5F5;
+}
+.header{
+	width: 37.5rem;
+	height: 2.375rem;
+	position: absolute;
+	top: 26.5rem;
+	left: 34.875rem;
+}
+.header span{
+	width: 2.375rem;
+	height: 2.375rem;
+	float: left;
+}
+.header p{
+	line-height: 2.375rem;
+	float: left;
+	margin-left: 1.25rem;
+	font-size: 1rem;
+	font-weight: bolder;
+	color: #666666;
+}
+.header p a{
+	color: #FF9501;
+}
+ul{
+	padding-left: 38.4375rem;
+	padding-top: 29.375rem;
+}
+ul li{
+	margin-top: 0.625rem;
+	font-size: 13px;
+	font-weight: bolder;
+	color: #A5A5A5;
+}

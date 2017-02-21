@@ -1,0 +1,278 @@
+.myInfo i {
+  color: red;
+}
+.myInfo p {
+  height: 4.375rem;
+  padding-top: 0.625rem;
+}
+.myInfo p span {
+  width: 7.5rem;
+  height: 3.125rem;
+  display: inline-block;
+  text-align: right;
+  line-height: 3.125rem;
+  padding-right: 0.625rem;
+}
+.myInfo p input {
+  width: 30rem;
+  height: 3.125rem;
+  padding-left: 1.25rem;
+}
+.myInfo .help-block {
+  display: none;
+  color: #FF9501;
+}
+.myInfo .help-block s {
+  width: 0.875rem;
+  height: 0.875rem;
+  display: inline-block;
+  background: url("../../images/tips.png");
+  background-size: 100%, 100%;
+  vertical-align: top;
+  margin: 0.125rem 0.3125rem 0 0;
+}
+.myInfo .select {
+  height: 2.75rem;
+  line-height: 2.75rem;
+}
+.myInfo .select span {
+  width: 7.5rem;
+  display: inline-block;
+  text-align: right;
+  padding-right: 0.625rem;
+  float: left;
+}
+.myInfo .select div {
+  float: left;
+  width: 6.25rem;
+  margin-left: 0.25rem;
+}
+.myInfo .select div s {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #ccc;
+  float: left;
+  margin: 0.625rem 0.625rem 0 0px;
+}
+.myInfo .select .on {
+  color: #FF9501;
+}
+.myInfo .select .on s {
+  border-color: #FF9501;
+  background: url("../../images/selected.png") -0.125rem -0.125rem;
+  background-size: 120% 120%;
+}
+.myInfo .license_pic {
+  height: 12.8125rem;
+  position: relative;
+}
+.myInfo .license_pic span {
+  width: 7.5rem;
+  height: 12.8125rem;
+  display: inline-block;
+  text-align: right;
+  line-height: 12.8125rem;
+  padding-right: 0.625rem;
+}
+.myInfo .license_pic .upload_photo {
+  position: absolute;
+  top: 0.625rem;
+  left: 6.25rem;
+}
+.myInfo .upload_photo .tips_suc {
+  position: absolute;
+  top: 1rem;
+  left: 16.375rem;
+}
+.myInfo .license_pic .upload_photo #thelist {
+  display: none;
+  width: 12.5rem;
+  height: 12.5rem;
+  position: absolute;
+}
+.myInfo .upload_photo #product_img {
+  margin-top: 1.25rem;
+  float: left;
+  width: 12.5rem;
+  height: 9.375rem;
+  background: url("../../images/photo.png");
+  background-size: 100% 100%;
+  margin-left: 1.5625rem;
+}
+.myInfo .agreement input {
+  width: 12.5rem;
+  background: url("../../images/date.png") no-repeat 10rem center;
+}
+.myInfo .select_pay {
+  margin-top: 0.625rem;
+}
+.myInfo .select_pay span {
+  width: 7.5rem;
+  display: inline-block;
+  text-align: right;
+  padding-right: 0.625rem;
+  float: left;
+}
+.myInfo .select_pay div {
+  margin-left: 0.25rem;
+  padding-left: 7.5rem;
+}
+.myInfo .select_pay div s {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #ccc;
+  float: left;
+  margin: -0.125rem 0.625rem 0 0px;
+}
+.myInfo .select_pay div p {
+  padding-top: 0;
+  height: 1.875rem;
+  /* width: 120rem; */
+}
+p{
+  width: 81.25rem;
+}
+.myInfo .select_pay div p:nth-child(3) {
+  margin-bottom: 1.9375rem;
+  padding-left: 3.625rem;
+}
+.myInfo .select_pay .on s {
+  border-color: #FF9501;
+  background: url("../../images/selected.png") -0.125rem -0.125rem;
+  background-size: 120%, 120%;
+}
+.myInfo .appendix {
+  height: 12.8125rem;
+  position: relative;
+  margin-top: -1.875rem;
+}
+.myInfo .appendix span {
+  width: 7.5rem;
+  height: 12.8125rem;
+  display: inline-block;
+  text-align: right;
+  line-height: 6.25rem;
+  padding-right: 0.625rem;
+}
+.myInfo .appendix .upload_photo {
+  position: absolute;
+  top: 0.625rem;
+  left: 6.25rem;
+}
+.myInfo .appendix .upload_photo .tips_suc2 {
+  position: absolute;
+  top: 1rem;
+  left: 16.375rem;
+}
+.myInfo .appendix .upload_photo #thelist2 {
+  display: none;
+  width: 12.5rem;
+  height: 12.5rem;
+  position: absolute;
+}
+.myInfo .appendix .upload_photo #product_img2 {
+  margin-top: 1.25rem;
+  float: left;
+  width: 12.5rem;
+  height: 9.375rem;
+  background: url("../../images/photo.png");
+  background-size: 100% 100%;
+  margin-left: 1.5625rem;
+}
+.myInfo footer {
+  margin-top: 1.875rem;
+  height: 12.1875rem;
+  border-top: 20px solid #F5F5F5;
+  padding-left: 7rem;
+}
+.myInfo footer a,
+.myInfo footer input {
+  display: inline-block;
+  line-height: 3.125rem;
+  text-align: center;
+  width: 9.375rem;
+  height: 3.125rem;
+  background-color: #FF9501;
+  color: #fff;
+  margin: 2.5rem 2.5rem 0 0;
+}
+.myInfo footer #nomark {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.myInfo .product_img {
+  height: 12.8125rem;
+  position: relative;
+  margin-top: -1.875rem;
+}
+.myInfo .product_img span {
+  width: 7.5rem;
+  height: 12.8125rem;
+  display: inline-block;
+  text-align: right;
+  line-height: 6.25rem;
+  padding-right: 0.625rem;
+}
+.myInfo .product_img .upload_photo {
+  position: absolute;
+  top: 0.625rem;
+  left: 6.25rem;
+}
+.myInfo .product_img .upload_photo .tips_suc2 {
+  position: absolute;
+  top: 1.875rem;
+  left: 4.375rem;
+}
+.myInfo .product_img .upload_photo #product_img {
+  width: 12.5rem;
+  height: 9.375rem;
+  position: absolute;
+}
+.myInfo .product_img .upload_photo #product_img .webuploader-pick {
+  margin-top: 0rem;
+  float: left;
+  width: 12.5rem;
+  height: 9.375rem;
+  background: url("../../images/photo.png");
+  background-size: 100% 100%;
+  margin-left: 0rem;
+}
+.myInfo .appendix {
+  height: 12.8125rem;
+  position: relative;
+  margin-top: -1.875rem;
+}
+.myInfo .appendix span {
+  width: 7.5rem;
+  height: 12.8125rem;
+  display: inline-block;
+  text-align: right;
+  line-height: 6.25rem;
+  padding-right: 0.625rem;
+}
+.myInfo .appendix .upload_photo {
+  position: absolute;
+  top: 0.625rem;
+  left: 6.25rem;
+}
+.myInfo .appendix .upload_photo .tips_suc2 {
+  position: absolute;
+  top: 1rem;
+  left: 16.375rem;
+}
+.myInfo .appendix .upload_photo #product_img2 {
+  width: 12.5rem;
+  height: 9.375rem;
+  position: absolute;
+}
+.myInfo .appendix .upload_photo #product_img2 .webuploader-pick {
+  margin-top: 0rem;
+  float: left;
+  width: 12.5rem;
+  height: 9.375rem;
+  background: url("../../images/photo.png");
+  background-size: 100% 100%;
+  margin-left: 0rem;
+}
+/*# sourceMappingURL=myInfo.css.map */

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>订单列表</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../../lib/respond/respond.js"></script>
+    <![endif]-->
+
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../../css/orderManage/inquiry.css"/>
+    <link rel="stylesheet" href="../../css/orderManage/orderlist.css"/>
+    <link rel="stylesheet" href="../../css/common.css"/>
+
+</head>
+<body>
+
+<div class="inquiry">
+    <div class="bg"></div>
+    <!-- 消费码搜索 -->
+    <div class="search">
+        <form action="">
+            <input type="text" name="" class="search-number" placeholder="请输入12位消费码"/>
+            <input type="button" value="查询" class="search-btn" id="search-btn"/>
+            <p>消费码不存在,请重新输入</p>
+        </form>
+    </div>
+    <!-- 消费详情 -->
+    <div class="manage">
+        <div class="manage-tit">
+            <p class="content">消费成功记录</p>
+        </div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <!--<th>订单号</th>
+                    <th>产品名称</th>
+                    <th>数量</th>
+                    <th>单价</th>
+                    <th>应付金额</th>
+                    <th>消费情况</th>
+                    <th>联系人</th>
+                    <th>消费时间</th>-->
+                    <th>订单号</th>
+                    <th>产品名称</th>
+                    <th>单价</th>
+                    <th>消费时间</th>
+                    <th>消费券码</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <img id="loadImg" src="../../images/load.gif"/>
+        <p class="none-tit">您还没有已消费记录</p>
+        <div class="page">
+            <p class="count">共有 <span></span> 条</p>
+            <div class="pagination paging"></div>
+        </div>
+    </div>
+</div>
+
+<!--模板数据渲染-->
+<script type="text/html" id="template">
+    {{each items as list index}}
+    <tr>
+        <td>{{list.Orderform}}</td>
+        <td>{{list.ProductName}}</td>
+        <td>{{list.Buy.toFixed(2)}}</td>
+        <td>{{list.Create}}</td>
+        <td>{{list.Consume}}</td> 
+        <!--<td>{{list.Quantity}}</td>
+        <td>{{list.Payable.toFixed(2)}}</td>
+        <td>{{list.StatusName}}</td>
+        <td>{{list.Linkman}}</td>-->
+        
+    </tr>
+    {{/each}}
+</script>
+<script src="../../js/Config.js"></script>
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../js/jquery.page.js"></script>
+<script src="../../js/template.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/orderMange/orderlist.js"></script>
+
+
+<!--网站后台配置js文件-->
+<script src="../../js/crypto-js.js"></script>
+<script src="../../js/Global.js"></script>
+
+</body>
+</html>

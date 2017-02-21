@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>我的账户</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../lib/webuploader/webuploader.css">
+    <link rel="stylesheet" href="../../lib/jedate/skin/jedate.css">
+    <link rel="stylesheet" href="../../css/systemManage/myAccount.css">
+    <script src="../../lib/jquery/jquery.min.js"></script>
+</head>
+<body>
+<!--TODO 自己项目页面内容-->
+    <section>
+    	<div class="blank"></div>
+        <div class="myAcc">
+            <form action="">
+                    <p>
+                        <span><i>* </i>姓名</span>
+                        <input type="text" placeholder="请输入姓名" required="required" id="busName">
+                        <em class="help-block"><s></s>姓名必须填写</em>
+                    </p>
+                 
+                    <div class="select" id="busIndustry">
+                        <span><i>* </i>性别</span>
+                        <div class="on"><s></s>男</div>
+                        <div><s></s>女</div>
+                    </div>
+   					<div class="product_album" id="productAlbum">
+                        <span><i>* </i>头像</span>
+                        <div class="upload_photo">
+                            <div id="product_album_list">                  
+                            </div>
+                            <div id="product_album" class="potoBtn">
+                            	更换头像
+                            </div>
+                        </div>
+                    </div>
+                    <p class="agreement">
+                        <span><i>* </i>出生日期</span>
+                        <input type="text" class="workinput wicon mr25" id="inpstart" readonly required="required">
+                    </p>
+                    <p>
+                        <span><i>* </i>手机号</span>
+                        <span id="busPhone"></span>
+                    </p>
+                    
+                <footer>
+                    <a href="javascript:void (0)" id="busSubmt">保存</a>
+                    <!--<input type="submit" id="busSubmit" value="保存">-->
+                </footer>
+            </form>
+        </div>
+    </section>
+<script src="../../js/Config.js"></script>
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/webuploader/webuploader.min.js"></script>
+<script src="../../lib/jedate/jedate.js"></script>
+<script src="../../js/systemManage/myAccount.js"></script>
+<script src="../../lib/jquery.validate.min.js"></script>
+<script src="../../js/common.js"></script>
+<!--网站后台配置js文件-->
+<script src="../../js/crypto-js.js"></script>
+<script src="../../js/Global.js"></script>
+
+
+
+</body>
+</html>

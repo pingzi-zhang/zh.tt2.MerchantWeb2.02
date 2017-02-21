@@ -1,0 +1,57 @@
+@charset "utf-8";
+.bgc {
+  height: 1.25rem;
+  background-color: #F5F5F5;
+}
+.content_template {
+  height: 80%;
+}
+.content_template .changePwd {
+  margin-top: 3rem;
+}
+.content_template .changePwd i {
+  color: red;
+}
+.content_template .changePwd p {
+  height: 4.375rem;
+  padding-top: 0.625rem;
+}
+.content_template .changePwd p span {
+  width: 9rem;
+  height: 3.125rem;
+  display: inline-block;
+  text-align: right;
+  line-height: 3.125rem;
+  padding-right: 0.625rem;
+}
+.content_template .changePwd p input {
+  width: 35.714285714285715rem;
+  height: 3.125rem;
+  padding-left: 1.25rem;
+}
+.content_template .changePwd .help-block {
+  display: none;
+  color: #ff9501;
+}
+.content_template .changePwd .help-block s {
+  width: 0.875rem;
+  height: 0.875rem;
+  display: inline-block;
+  background: url("../../images/tip.png");
+  background-size: 100%, 100%;
+  vertical-align: top;
+  margin: 0.125rem 0.3125rem 0 0;
+}
+.content_template .changePwd #btn {
+  display: inline-block;
+  line-height: 3.125rem;
+  text-align: center;
+  width: 9.375rem;
+  height: 3.125rem;
+  background-color: #f3992c;
+  color: #fff;
+  margin: 2.5rem 2.5rem 0 0;
+  margin-left: 9rem;
+  cursor: pointer;
+}
+/*# sourceMappingURL=changePwd.css.map */

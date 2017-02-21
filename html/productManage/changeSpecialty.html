@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="myModule">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>修改特产</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../lib/webuploader/webuploader.css">
+    <link rel="stylesheet" href="../../lib/jedate/skin1/jedate1.css">
+    <link rel="stylesheet" href="../../css/productManage/addTicket.css" />
+</head>
+<body  ng-controller="myController">
+<!--TODO 自己项目页面内容-->
+<section>
+    <div class="addTicket">
+        <form action="">
+            <div class="baseInfo">
+                <header>
+                    <h2>基本信息</h2>
+                </header>
+                <section>
+                	<p>
+                		<span><i>* </i>特产类型</span>
+                		<select class="specialty" id="specialty">
+						  <option value="水果" selected="selected">水果</option>
+						  <option value="生活用品" selected="selected">生活用品</option>
+						  <option value="零食/干果" selected="selected">零食/干果</option>
+						  <option value="酒水" selected="selected">酒水</option>
+						  <option value="其他" selected="selected">其他</option>
+						</select>
+                	</p>
+                    <p>
+                        <span><i>* </i>产品名称</span>
+                        <input type="text" placeholder="请输入特产名称" required="required" id="proName">
+                        <em class="help-block"><s></s>特产名称必须填写</em>
+                    </p>
+                    <p>
+                        <span><i>* </i>产品单位</span>
+                        <input type="text" placeholder="请输入" required="required" id="proUnit">
+                        <em class="help-block"><s></s>特产单位必须填写</em>
+                    </p>
+                </section>
+            </div>
+            <div class="productPrice clearfix">
+                <header>
+                    <h2>产品价格</h2>
+                </header>
+                <section>
+                     <p>
+                        <span><i>* </i>分销价</span>
+                        <input onkeyup="value=value.replace(/[^\-?\d.]/g,'')" type="text" id="vipPrice" placeholder="请输入价格" required="required">
+                        <em class="help-block"><s></s>价格必须填写</em>
+                    </p>
+                    <p>
+                        <span><i>* </i>门店价</span>
+                        <input onkeyup="value=value.replace(/[^\-?\d.]/g,'')"  type="text" id="originalCost" placeholder="请输入价格" required="required">
+                        <em class="help-block"><s></s>价格必须填写</em>
+                    </p>
+                </section>
+            </div>
+            <div class="product_Info">
+            	<header>
+                    <h2>产品介绍</h2>
+                </header>
+                <section>
+                	<p class="textDescribe">
+                        <span><i>* </i>图文描述</span>
+                        <script id="textDescribe" type="text/plain" name="content" ng-model="content"></script>
+                    	<div id="filePicker1" class="uploadPhoto">上传图片</div>
+                    </p>
+                    <div class="productDisc">
+                        <span><i>* </i>规格说明：</span>
+                        <script id="orderDisc" type="text/plain" name="content" ng-model="content"></script>
+                    </div>
+                    <div class="productDisc">
+                        <span><i>* </i>取货方式：</span>
+                        <script id="importantTerms" type="text/plain" name="content" ng-model="content"></script>
+                    </div>
+                    <div class="productDisc">
+                        <span><i>* </i>保存及使用：</span>
+                        <script id="backRule" type="text/plain" name="content" ng-model="content"></script>
+                    </div>
+                    <div class="productDisc">
+                        <span><i>* </i>售后小贴士：</span>
+                        <script id="useMethod" type="text/plain" name="content" ng-model="content"></script>
+                    </div>
+                </section>
+            </div>
+            <div class="productIntroduction_img">
+                <header>
+                    <h2>产品相册</h2>
+                </header>
+                <section>
+                    <div class="product_img" id="productImg">
+                        <span><i>* </i>产品首图</span>
+                        <div class="upload_photo" id="fitstPic">
+                            <!--<div id="thelist2" class="uploader-list"></div>-->
+                            <div id="product_img"></div>
+                            <em class="help-block tips_suc2"><s></s>图片上传成功</em>
+                        </div>
+                    </div>
+                    <div class="product_album" id="productAlbum">
+                        <span><i>* </i>产品相册</span>
+                        <div class="upload_photo">
+                            <div id="product_album_list">
+                                <s></s>
+                                <!--<div><img src="../../images/product_album.png" alt=""></div>
+                                <div><img src="../../images/product_album.png" alt=""></div>-->                     
+                            </div>
+                            <div id="product_album">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <!--<a href="./businessList.html">取消</a>
+                <a href="./businessList.html" id="save">保存</a>-->
+                <a href="addSpecialty.html">取消</a>
+                <a href="#" id="save">保存</a>
+                <a href="javascript:void (0)" id="busSubmit">保存并提交审核</a>
+            </footer>
+        </form>
+    </div>
+    <!--弹出层-->
+    <div class="layer_bg">
+        <div class="layer_addFood">
+
+        </div>
+    </div>
+</section>
+<script src="../../js/Config.js"></script>
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/webuploader/webuploader.min.js"></script>
+<script src="../../lib/jedate/jquery.jedate.min.js"></script>
+<script src="../../lib/ueditor/ueditor.config.js"></script>
+<script src="../../lib/ueditor/ueditor.all.js"></script>
+<script src="../../lib/jquery.validate.min.js"></script>
+<script src="../../lib/angular/angular.min.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/productManage/changeSpecialty.js"></script>
+
+<!--网站后台配置js文件-->
+<script src="../../js/crypto-js.js"></script>
+<script src="../../js/Global.js"></script>
+
+
+</body>
+</html>

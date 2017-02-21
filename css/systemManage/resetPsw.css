@@ -1,0 +1,311 @@
+body{
+	background-color: #F5F5F5;
+	height: 63.875rem;
+}
+nav{
+	height: 3.75rem;
+	background-color: #FF9501;
+	padding-right: 24.0625rem;
+	padding-left: 22.5625rem;
+	/* line-height: 3.75rem; */
+}
+nav span{
+	display: inline-block;
+	width: 0.0625rem;
+	height: 1.25rem;
+	background-color: #fff;
+	margin-top: 1.25rem;
+	float: left;
+	margin-left: 3rem;
+}
+nav img{
+	float: left;
+	margin-top: 0.4rem;
+}
+nav a{
+	font-size: 0.875rem;
+	display: inline-block;
+	height: 3.75rem;
+	line-height: 3.75rem;
+	float: left;
+	margin-left: 1.0625rem;
+}
+nav a:last-child{
+	float: right;
+}
+.include{
+	width: 70rem;
+	height: 55.625rem;
+	background-color: #fff;
+	margin: 2.5rem auto;
+	padding-top: 15.625rem;
+}
+.include .header{
+	width: 41.6875rem;
+	height: 1.5625rem;
+	margin-left: 12rem;
+}
+.include .header div{
+	float: left;
+}
+.include .header .diamond{
+	width: 1.375rem;
+	height: 1.375rem;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); 	/* IE 9 */
+	-moz-transform:rotate(45deg); 	/* Firefox */
+	-webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+	-o-transform:rotate(45deg); /* Opera */
+	/*background-color: #989898;*/
+	text-align: center;
+	line-height: 1.375rem;
+	color: #F0F0F0;	
+	background-color: #FF9501;
+}
+/* .include .header .diamond:first-child{
+	background-color: #FF9501;
+} */
+.include .header .diamond span{
+	display: inline-block;
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg); 	/* IE 9 */
+	-moz-transform:rotate(-45deg); 	/* Firefox */
+	-webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-45deg); /* Opera */
+}
+.include .header .line{
+	width: 17.5rem;
+	height: 0.25rem;
+	border-radius: 4px;
+	/*background-color: #CBCBCB;*/
+	margin-top: 0.625rem;
+	margin-left: 0.625rem;
+	margin-right: 0.625rem;
+	background-color: #FF9501;
+}
+.include .step{
+	width: 43.875rem;
+	margin-left: 10.75rem;
+	margin-top: 1.125rem;
+}
+.include .step span{
+	width: 14.625rem;
+	display: inline-block;
+	color: #CBCBCB;
+	font-size: 1rem;
+}
+.include .step span:first-child{
+	text-align: left;
+	color: #FF9501;
+}
+.include .step span:nth-child(2){
+	text-align: center;
+	color: #FF9501;
+}
+.include .step span:last-child{
+	text-align: right;
+	color: #FF9501;
+}
+.include .mima{
+	width: 100%;
+	height: 3.4285714285714284rem;
+	margin-top: 2rem;
+	margin-bottom: 0.875rem;
+	position: relative;
+}
+.include .mima .warning{
+	display: none;
+	/*width: 11.285714285714286rem;*/
+	height: 1.7142857142857142rem;
+	position: absolute;
+	left: 50%;
+	top: -1.8142857142857142rem;
+	line-height: 1.7142857142857142rem;
+	text-align: center;
+	background-color: #FFF3E3;
+	margin-left: -10.857142857142858rem;
+	color: #FF9501;
+}
+.include .setPassword{
+	margin-left: 20rem;
+	width: 25.714285714285715rem;
+	height: 3rem;
+	/* background-color: #1D8BD7; */
+	border: 1px solid #F5F5F5;
+	border-radius: 3px;
+	padding-left: 1.625rem;
+	padding-top: 0.8rem;
+	font-size: 0.875rem;
+	color: #666666;
+}
+.include .newPassword{
+	margin-left: 20rem;
+	width: 25.714285714285715rem;
+	height: 3rem;
+	/* background-color: #67CBC3; */
+	border: 1px solid #F5F5F5;
+	border-radius: 3px;
+	padding-left: 1.625rem;
+	padding-top: 0.8rem;
+	margin-bottom: 1.875rem;
+	font-size: 0.875rem;
+	color: #666666;
+}
+.include .setPassword input{
+	padding-left: 1.25rem;
+	/* background-color: #1D8BD7; */
+	border: none;
+}
+.include .newPassword input{
+	padding-left: 1.25rem;
+	/* background-color: #67CBC3; */
+	border: none;
+}
+.include .button{
+	display: inline-block;
+	margin-left: 21.5rem;
+	width: 22.75rem;
+	height: 3rem;
+	background-color: #FF9501;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 3rem;
+	font-size: 1rem;
+}
+/*.include .change{
+	margin-left: 1.5rem;
+	display: inline-block;
+	height: 3rem;
+	line-height: 3rem;
+}
+.include .change a{
+	color: #FF9501;
+}*/
+/*.include .warning{
+	width: 18.75rem;
+	height: 1.875rem;
+	background-color: #FFF3E3;
+	text-align: center;
+	line-height: 1.875rem;
+	margin-top: 3.75rem;
+	margin-left: 24.25rem;
+	color: #FF9501;
+}*/
+footer{
+	width:100%;
+	height: 3.75rem;
+	background-color: #fff;
+	margin-top: 2.0625rem;
+	text-align: center;
+	line-height: 3.75rem;
+	font-size: 0.875rem;
+	position:fixed;
+	bottom: 0px;
+	left:0px;
+}
+.help-tit{
+	/*margin: 10px 0;*/
+	color: #737373;;
+	display: none;
+}
+
+.include .telephone{
+	width: 100%;
+	height: 3.4285714285714284rem;
+	margin-top: 6rem;
+	position: relative;
+}
+.include .telephone .username{
+	margin-left: 20rem;
+	width: 25.714285714285715rem;
+	height: 3.4285714285714284rem;
+	border-radius: 3px;
+	line-height: 3.142857142857143rem;
+	padding-left: 2rem;
+	margin-bottom: 1.875rem;
+	font-size: 0.875rem;
+	color: #666666;
+	border:1px solid #e5e5e5;
+}
+.include .telephone .username input{
+	padding-left: 1.25rem;
+	/*background-color: #67CBC3;*/
+	border: none;
+}
+.include .telephone .warning{
+	display: none;
+	width: 5.285714285714286rem;
+	height: 1.7142857142857142rem;
+	position: absolute;
+	left: 50%;
+	top: -1.7142857142857142rem;
+	line-height: 1.7142857142857142rem;
+	text-align: center;
+	background-color: #FFF3E3;
+	margin-left: -12.857142857142858rem;
+	color: #FF9501;
+}
+.include .telephone .help-tit{
+	/*position: absolute;
+	top: 0.7142857142857143rem;
+	left: 50%;
+	margin-left: 14.285714285714286rem;*/
+	display: none;
+}
+
+.include .input-code{
+	width: 25.714285714285715rem;
+	height: 3rem;
+	border-radius: 3px;
+	/* background-color: #67CBC3; */
+	border: 1px solid #F5F5F5;
+	line-height: 3rem;
+	margin-left: 20rem;
+	font-size: 0.875rem;
+	float: left;
+	padding-right: 0.625rem;
+}
+.include .getCode{
+	display: inline-block;
+	margin-left: 0.9375rem;
+	height: 3rem;
+	line-height: 3rem;
+	font-size: 0.875rem;
+	/*color:#FF9501 ;*/
+}
+.include .input-code input{
+	/* background-color: #67CBC3; */
+	border: none;
+	padding-left: 2.925rem;
+	color: #666666;
+	height: 2rem;
+}
+.include .tip{
+	display: none;
+	color: #FFFFFF;
+	background-color: #ff9501;
+}
+.include .input-code a{
+	color: #FF9501;
+	float: right;
+}
+.include .validatecode{
+	width: 100%;
+	height: 3rem;
+	margin-top: 2rem;
+	/*margin-top: 6rem;*/
+	position: relative;
+}
+.include .validatecode .warning{
+	display: none;
+	width: 11.285714285714286rem;
+	height: 1.7142857142857142rem;
+	position: absolute;
+	left: 50%;
+	top: -1.7142857142857142rem;
+	line-height: 1.7142857142857142rem;
+	text-align: center;
+	background-color: #FFF3E3;
+	margin-left: -10.857142857142858rem;
+	color: #FF9501;
+}

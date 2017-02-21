@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>重置密码</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/systemManage/findMethods.css">
+</head>
+<body>
+	<nav><img src="../../images/TT_logo.png" height="36" width="139"><span></span><a href="">找回密码</a><a href="../login.html">登录</a></nav>
+	<div class="include">
+		<div class="header">
+			<div class="diamond"><span>1</span></div>
+			<div class="line"></div>
+			<div class="diamond"><span>2</span></div>
+			<div class="line"></div>
+			<div class="diamond"><span>3</span></div>
+		</div>
+		<p class="step"><span>找回方式</span><span>安全验证</span><span>重置密码</span></p>
+		<p class="warning">账号不存在</p>
+		<p class="username">账号<input type="text" placeholder="手机号" id="busPhone"><em class="help-block"><s></s>账号必须填写</em></p>
+		<p class="code">验证码<input type="text" id="pwd3"><span id="yzh"></span><span id="dc4"></span></p><span class="change">看不清，<a id="shua">换一张</a></span>
+		<a href="javascript:void (0)" class="button">下一步</a>
+	</div>
+	<footer><p>Copyright © 2016 traveltailor.cn All Rights Reserved 蜀ICP备16021</p></footer>
+	<script src="../../js/crypto-js.js"></script>
+	<script src="../../js/Config.js"></script>
+	<script src="../../lib/jquery/jquery.min.js"></script>
+	<script src="../../lib/jquery.validate.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/systemManage/findMethods.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body{
+    background-color: #f5f5f5;
+}
+.manage-item{
+    width: 100%;
+    height: 23.857143rem;
+    margin-top: 1.4285714285714286rem;
+    background-color: #fff;
+}
+.manage-item dl{
+    padding-top: 2.5rem;
+}
+.manage-item dl dt{
+    font-size: 1rem;
+    line-height: 2.5rem;
+    color: #747474;
+}
+.manage-item dl dd{
+    line-height: 2.5rem;
+}
+.manage-item dl dd input{
+    display: inline-block;
+    padding-left: 1.4285714285714286rem;
+    /*line-height: 2.142857142857143rem;*/
+    border-radius: 1px;
+    width: 35.714285714285715rem;
+    height: 3.5714285714285716rem;
+}
+.manage-item dl dd>span{
+    display: none;
+    margin-left: 1.4285714285714286rem;
+    color: #ff9501;
+}
+.manage-item dl .active1,.active2{
+    margin-top: 0.7142857142857143rem;
+}
+.manage-item dl dd p{
+    color: #a1a1a1;
+    line-height: 3.5714285714285716rem;
+}
+button{
+    width: 10.714285714285714rem;
+    height: 3.5714285714285716rem;
+    border: 1px solid #CCCCCC;
+    margin-top: 2.857142857142857rem;
+    font-size: 1.1428571428571428rem;
+}
+.cancel-btn{
+    background-color: #f5f5f5;
+    margin-left: 8.571428571428571rem;
+    color: #666;
+}
+.save-btn{
+    background-color: #ff9501;
+    color: #fff;
+    margin-left: 1.4285714285714286rem;
+}

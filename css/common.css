@@ -1,0 +1,285 @@
+/*公共css样式*/
+/*初始化css样式*/
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+    margin: 0;
+    padding: 0;
+}
+em,s,i,b{
+    font-style: normal;
+    font-weight: normal;
+}
+html {
+    height: 100%;
+    /*overflow:hidden;*/
+    /*font-size: 0.875rem;*/
+    /*zoom:0.85;*/
+}
+/*@media only screen and (min-width: 最小宽度) and (max-width: 最大宽度)
+ {这里是定义在这个分辨率里面的样式及属性}*/
+body {
+    font: 0.875rem "微软雅黑", "Arial Narrow", HELVETICA;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+    width: 100%;
+    height: 100%;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:link {
+    color: #fff;
+    text-decoration: none;
+}
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+a:active {
+    color: #fff;
+    text-decoration: none;
+}
+li {
+    list-style: none
+}
+img {
+    border: 0;
+    vertical-align: middle
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+p {
+    word-wrap: break-word
+}
+button {
+    text-align: center;
+    cursor: pointer
+}
+button:hover {
+    background-color: #ffac4f;
+    color: #fff;
+}
+.header {
+    width: 100%;
+}
+/*文本框的样式*/
+input,select{
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    border: 1px solid #e3e3e3;
+    padding-left: 0.25rem;
+    outline: none;
+}
+input:focus {
+    border: 1px solid #ffac4f;
+}
+button {
+    border-radius: 0.2rem;
+    border: none;
+}
+
+/*左右浮动以及清除浮动*/
+.fl_left {
+    float: left
+}
+
+.fl_right {
+    float: right
+}
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+/*颜色*/
+.gray {
+    color: #A7A7A7;
+}
+.red {
+    color: red;
+}
+.orenge {
+    color: #ff9501!important;
+}
+.bgon {
+    background-color: #FFA01B!important;
+}
+.mgl-25 {
+    margin-left:-1.5625rem;
+}
+
+.hidden {
+    display: none;
+}
+.disInb {
+    display: inline-block;
+}
+.rotate {
+    transform:rotate(0deg)!important;
+}
+
+/*侧边栏公用样式*/
+.traveltailor_business {
+    width: 100%;
+    height: 100%;
+}
+.traveltailor_business .sideBar {
+    width: 15.625rem;
+    height: 100%;
+    background-color: #ff9501;
+    float: left;
+    position: relative;
+}
+.traveltailor_business .sideBar .logo s {
+    display: block;
+    margin-left: 2.4375rem;
+    margin-top: 2.6875rem;
+    margin-bottom: 2.625rem;
+    width: 10.75rem;
+    height: 2.8125rem;
+    background: url("../images/TT_logo.png");
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.traveltailor_business .sideBar{
+    overflow: hidden;
+}
+.traveltailor_business .sideBar ul li a{
+    font-size: 1rem;
+    height: 3.4rem;/*3.75rem修改为3.4*/
+    width: 100%;
+    display: block;
+    padding-left: 5rem;
+    line-height: 3.4rem;/*3.75rem修改为3.4*/
+    position: relative;
+}
+.traveltailor_business .sideBar ul li a:hover {
+    background-color: #e58601;
+}
+.traveltailor_business .sideBar ul li .icon_order {
+    background: url("../images/icon-order.png");
+}
+.traveltailor_business .sideBar ul li .icon_sale {
+    background: url("../images/icon-sale.png");
+}
+.traveltailor_business .sideBar ul li .icon_product {
+    background: url("../images/icon-product.png");
+}
+.traveltailor_business .sideBar ul li .icon_system {
+    background: url("../images/icon-system.png");
+}
+.traveltailor_business .sideBar ul li .icon_account {
+    background: url("../images/icon-account.png");
+}
+
+.traveltailor_business .sideBar ul li .arrow_icon {
+    width: 0.6875rem;
+    height: 0.4375rem;
+    display: block;
+    position: absolute;
+    background: url("../images/next.png");
+    background-size: 100% 100%;
+    top: 1.6875rem;
+    right: 1.125rem;
+    transform:rotate(-90deg);
+}
+.traveltailor_business .sideBar ul li .icon {
+    display: block;
+    width: 1.375rem;
+    height: 1.25rem;
+    left: 2.5rem;
+    top: 1.25rem;
+    position: absolute;
+    background-size: 100% 100%;
+}
+.traveltailor_business .sideBar ul .sub_menu a {
+    font-size: 0.75rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding-left: 5.625rem;
+}
+.traveltailor_business .sideBar ul .sub_menu a:hover {
+    background-color: #ffa01b;
+}
+.traveltailor_business .sideBar .link_us {
+	
+    margin-top:251%;
+    width: 100%;
+}
+.traveltailor_business .sideBar .link_us p {
+    text-align: center;
+    height: 1.5rem;
+    line-height:1.5rem;
+    color: #fff;
+
+}
+.traveltailor_business .content {
+    padding-left: 15.625rem;
+    width: 100%;
+    height: 100%;
+}
+.traveltailor_business .content header {
+    width: 100%;
+    height: 7%;
+    line-height: 3.75rem;
+}
+.traveltailor_business .content header span {
+    float: left;
+}
+.traveltailor_business .content header .on {
+    color:#ff9501;
+}
+.traveltailor_business .content header .header-l{
+    margin-left: 2.5rem;
+}
+.traveltailor_business .content header .header-r .avatar {
+    display: block;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    background: url("../images/userImg.png");
+    background-size: 100% 100%;
+    margin-top: 0.5rem;
+}
+.traveltailor_business .content header .header-r .name {
+    margin:0 1.25rem;
+}
+.traveltailor_business .content header .header-r .down {
+    width: 0.6875rem;
+    height: 0.4375rem;
+    display: block;
+    background: url("../images/down.png");
+    background-size: 100% 100%;
+    margin:1.6875rem 3.125rem 0 0;
+}
+.traveltailor_business .content section {
+    width: 100%;
+    height: 92.5%;
+}
+.quit{
+	margin-right: 2.2857142857142856rem;
+	cursor: pointer;
+}
+#loadImg{
+	display: none;
+	margin-left: 54rem;
+}

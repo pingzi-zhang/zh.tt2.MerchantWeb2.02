@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="myModule">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>修改套餐</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../lib/webuploader/webuploader.css">
+    <link rel="stylesheet" href="../../lib/jedate/skin/jedate.css">
+    <link rel="stylesheet" href="../../css/productManage/addFood.css">
+    <script src="../../lib/jquery/jquery.min.js"></script>
+</head>
+<body ng-controller="myController">
+<!--TODO 自己项目页面内容-->
+<section>
+    <div class="addFood">
+        <form action="">
+            <div class="baseInfo">
+                <header>
+                    <h2>基本信息</h2>
+                </header>
+                <section>
+                    <p>
+                        <span><i>* </i>套餐标题</span>
+                        <input type="text" placeholder="请输入套餐名称" required="required" id="foodName">
+                        <em class="help-block"><s></s>套餐名称必须填写</em>
+                    </p>
+                    <div class="mSelect" id="diningP">
+                        <span><i>* </i>用餐时段</span>
+                        <div><s></s>早餐</div>
+                        <div class="on"><s></s>午餐</div>
+                        <div><s></s>晚餐</div>
+                        <div><s></s>夜宵</div>
+                        <em class="help-block"><s></s>请选择</em>
+                    </div>
+                    <div class="select" id="diningNum">
+                        <span><i>* </i>用餐人数</span>
+                        <div class="numdiv">单人餐</div>
+                        <div class="numdiv">双人餐</div>
+                        <div class="numdiv">3-4人餐</div>
+                        <div class="numdiv">4-5人餐</div>
+                        <div class="numdiv">5-6人餐</div>
+                        <div class="numdiv self" id="custom">自定义</div>
+                        <!--<input type="text" placeholder="自定义" class="custom personNum">-&nbsp;&nbsp;
+                        <input type="text" placeholder="自定义" class="custom personNum">
+                        <div class="custom">确定</div>-->
+                        <div class="bounced" id="bounced">
+							<input type="text" placeholder="人数" class="min"/> <span>——</span>
+							<input type="text" placeholder="人数" class="max"/>
+							<a href="javascript:void(0)" class="ensure">确定</a>
+						</div>
+                    </div>
+                </section>
+            </div>
+            <div class="productPrice clearfix">
+                <header>
+                    <h2>产品价格</h2>
+                </header>
+                <section>
+                    <p>
+                        <span><i>* </i>分销价</span>
+                        <input type="text" id="vipPrice" placeholder="请输入价格" required="required">
+                        <em class="help-block"><s></s>价格必须填写</em>
+                    </p>
+                    <p>
+                        <span><i>* </i>门店价</span>
+                        <input type="text" id="originalCost" placeholder="请输入价格" required="required">
+                        <em class="help-block"><s></s>价格必须填写</em>
+                    </p>
+                </section>
+            </div>
+            <div class="foodIntroduce">
+                <header>
+                    <h2>菜品介绍</h2>
+                </header>
+                <section>
+                	<a class="btn_addFood" href="javascript:void (0)" id="addfoodlist">+新增菜品</a>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>菜品类别</th>
+                                <th>菜品名称</th>
+                                <th>单价</th>
+                                <th>数量</th>
+                                <th>单位</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="addNewInfo" class="addNewInfo">
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+            <div class="buyTips">
+                <header>
+                    <h2>购买需知</h2>
+                </header>
+                <section>
+                    <div class="select" id="supportQuit">
+                        <span><i>* </i>是否支持随时退</span>
+                        <div class="on"><s></s>是</div>
+                        <div><s></s>否</div>
+                    </div>
+                    <p>
+                        <span><i>* </i>套餐卷有效期</span>
+                        自购买起<input type="text"  required class="validity" id="validity">天有效，若过期，请申请退款。
+                    </p>
+                    <p class="userTime">
+                        <span><i>* </i>使用时间</span>
+                        <input type="text" class="workinput wicon mr25" id="inpstart" readonly required>
+                        &nbsp;至&nbsp;
+                        <input type="text" id="inpend" readonly required>
+                    </p>
+                    <p class="userRules">
+                        <span><i>* </i>使用规则</span>
+                        <script id="userRules" type="text/plain" name="content" ng-model="content"></script>
+                    </p>
+                </section>
+            </div>
+            <div class="productIntroduction_text">
+                <header>
+                    <h2>产品介绍</h2>
+                </header>
+                <section>
+                    <p class="textDescribe">
+                        <span><i>* </i>图文描述</span>
+                        <script id="textDescribe" type="text/plain" name="content" ng-model="content"></script>
+                    	<div id="filePicker1" class="uploadPhoto">上传图片</div>
+                    </p>
+                </section>
+            </div>
+            <div class="productIntroduction_img">
+                <header>
+                    <h2>产品介绍</h2>
+                </header>
+                <section>
+                    <div class="product_img" id="productImg">
+                        <span><i>* </i>产品首图</span>
+                        <div class="upload_photo" id="fitstPic">
+                        	<!--<div class="imgClear">×</div>-->
+                            <!--<div id="thelist2" class="uploader-list"></div>-->
+                            <div id="product_img"></div>
+                            <em class="help-block tips_suc2"><s></s>图片上传成功</em>
+                        </div>
+                    </div>
+                    <div class="product_album" id="productAlbum">
+                        <span><i>* </i>产品相册</span>
+                        <div class="upload_photo">
+                            <div id="product_album_list">
+                                <s></s>
+                                <!--<div><img src="../../images/product_album.png" alt=""></div>
+                                <div><img src="../../images/product_album.png" alt=""></div>-->                     
+                            </div>
+                            <div id="product_album">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <a href="javascript:void (0)" id="cancel">取消</a>
+                <a href="javascript:void (0)" id="save">保存</a>
+                <a href="javascript:void (0)" id="submit">保存并提交审核</a>
+            </footer>
+        </form>
+    </div>
+    <!--弹出层-->
+    <div class="layer_bg" id="addfood">
+        <div class="layer_addFood">
+            <header>新增菜品 <img class="close" src="../../images/close.png" alt=""></header>
+            <div class="layer_content">
+                <div class="addNewfood">
+                	<div class="content_upload">
+	                    <div id="upload_img" class="upload_img"></div>
+	                </div>
+                </div>
+                <div class="content_input">
+                    <p>
+                        <span>菜品类别：</span>
+                        <!--<input id="editFoodtype" type="text" placeholder="如热菜、凉菜">-->
+                        <select class="foodtype" id="foodtype">
+		                    <option value="1">冷菜</option>
+		                    <option value="2">热菜</option>
+		                    <option value="3">点心</option>
+		                    <option value="4">饮料</option>
+		                    <option value="9">其他</option>
+		                </select>
+                    </p>
+                    <p>
+                        <span>菜品名称：</span>
+                        <input id="addFoodName" type="text" placeholder="如土豆回锅">
+                        <span class="layer_Tip">*菜品名称填写</span>
+                    </p>
+                    <p>
+                        <span>单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;价：</span>
+                        <input id="foodPrice" type="text" placeholder="请填写价格">
+                        <span class="layer_Tip">格式不正确</span>
+                    </p>
+                    <p>
+                        <span>数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</span>
+                        <input id="foodNumber" type="text" placeholder="请填写数量">
+                        <span class="layer_Tip">格式不正确</span>
+                    </p>
+                    <p>
+                        <span>单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位：</span>
+                        <input id="foodUnit" type="text" placeholder="如:份">
+                    </p>
+                    <input type="button" value="保存" class="btn dialogSave">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--编辑弹出层-->
+    <div class="layer_bg" id="editfood">
+        <div class="layer_addFood">
+            <header>修改菜品 <img class="close" src="../../images/close.png" alt=""></header>
+            <div class="layer_content">
+                <div class="addNewfood">
+                	<div class="content_upload">
+	                    <div id="editUpload_img" class="upload_img"></div>
+	                </div>
+                </div>
+                <div class="content_input">
+                    <p>
+                        <span>菜品类别：</span>
+                        <!--<input id="editFoodtype" type="text" placeholder="如热菜、凉菜">-->
+                        <select class="foodtype" id="editfoodtype">
+		                    <option value="1">冷菜</option>
+		                    <option value="2">热菜</option>
+		                    <option value="3">点心</option>
+		                    <option value="4">饮料</option>
+		                    <option value="9">其他</option>
+		                </select>
+                    </p>
+                    <p>
+                        <span>菜品名称：</span>
+                        <input id="editFoodName" type="text" placeholder="如土豆回锅">
+                        <span class="layer_Tip">*菜品名称填写</span>
+                    </p>
+                    <p>
+                        <span>单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;价：</span>
+                        <input id="editFoodPrice" type="text" placeholder="请填写价格">
+                        <span class="layer_Tip">格式不正确</span>
+                    </p>
+                    <p>
+                        <span>数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</span>
+                        <input id="editFoodNumber" type="text" placeholder="请填写数量">
+                        <span class="layer_Tip">格式不正确</span>
+                    </p>
+                    <p>
+                        <span>单&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位：</span>
+                        <input id="editFoodUnit" type="text" placeholder="如:份">
+                    </p>
+                    <input type="button" value="保存" class="btn dialogSave">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="layer_bg1">
+        <div class="layer_publish">
+            <header>提示<img class="close" src="../../images/close.png" alt=""></header>
+            <div class="layer_content">
+                <p>此次编辑还未完成，是否确认取消发布？</p>
+                <input class="cancel" type="button" value="取消">
+                <input class="certain" type="button" value="确定">
+            </div>
+        </div>
+    </div>
+</section>
+<!--菜品的渲染-->
+<script type="textml" id="template-tr">
+    <tr>
+    	<td data="{{value.listNo}}">{{value.foodType}}</td>
+        <td data={{value.foodImg}}>
+        	<img src="{{value.foodImg}}" alt=""/>
+            <span>{{value.foodName}}</span>
+        </td>
+        <td>{{value.foodPrice}}</td>
+        <td>{{value.foodNum}}</td>
+        <td>{{value.foodUnit}}</td>
+        <td>
+            <span class="del">{{"删除"}}</span>
+            <br>
+            <span class="_edit">{{"编辑"}}</span>
+        </td>
+    </tr>
+</script>
+
+<!--&lt;!&ndash;模板数据渲染&ndash;&gt;-->
+<script type="text/html" id="template">
+        <dd>{{ProductID}}</dd>
+        <dd>{{OrderID}}</dd>
+        <dd>{{Name}}</dd>
+        <dd>{{VarietyName}}</dd>
+        <dd>{{Sell}}</dd>
+        <dd>{{Quantity}}</dd>
+        <dd>{{Linkman}}</dd>
+        <dd>{{StatusName}}</dd>
+</script>
+<script src="../../js/Config.js"></script>
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/webuploader/webuploader.min.js"></script>
+<script src="../../lib/jedate/jedate.js"></script>
+<script src="../../lib/ueditor/ueditor.config.js"></script>
+<script src="../../lib/angular/angular.min.js"></script>
+<script src="../../lib/ueditor/ueditor.all.js"></script>
+<script src="../../lib/jquery.validate.min.js"></script>
+<script src="../../js/template.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/productManage/changeFoodAdd.js"></script>
+<!--网站后台配置js文件-->
+<script src="../../js/crypto-js.js"></script>
+<script src="../../js/Global.js"></script>
+
+<script>
+    $("#product_album_list img").mouseenter(function () {
+        $(this).addClass("delectOn");
+
+    })
+    $("#product_album_list img").mouseout(function () {
+        $(this).removeClass("delectOn");
+    })
+</script>
+
+</body>
+</html>

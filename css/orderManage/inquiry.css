@@ -1,0 +1,114 @@
+.inquiry{
+    width: 100%;
+    height: 100%;
+}
+.inquiry .bg{
+    width: 100%;
+    height: 1.4285714285714286rem;
+    background-color: #F5F5F5;
+}
+/* ��ʳ�������������ʽ���ÿ�ʼ */
+.inquiry .search{
+    width: 100%;
+    height: 20.714285714285715rem;
+    background-color: #fff;
+}
+.inquiry .search form{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.inquiry .search form p{
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 6.571428571428571rem;
+    color: #ff9501;
+    margin-left: -22.14235714235rem;
+}
+.inquiry .search .search-number{
+    width: 34.285714285714285rem;
+    height: 3.4285714285714284rem;
+    margin: 8.571428571428571rem auto;
+    padding-left: 1.4285714285714286rem;
+}
+.inquiry .search .search-btn{
+    width: 10.714285714285714rem;
+    height: 3.5714285714285716rem;
+    margin-left: 1.4285714285714286rem;
+    background-color: #ff9501;
+    color: #fff;
+    font-size: 1.1428571428571428rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* ��ʳ�������������ʽ���ý��� */
+
+/* �������Ϣ��ʽ���ÿ�ʼ */
+.inquiry .manage{
+    width: 100%;
+    margin-bottom: 6.428571428571429rem;
+}
+.inquiry .manage .manage-tit{
+    width: 100%;
+    height: 5.428571428571429rem;
+    background-color: #F5F5F5;
+}
+.inquiry .manage  p.content{
+    font-weight: 600;
+    font-size: 1.1428571428571428rem;
+    padding:  2.7142857142857144rem 0 1.4285714285714286rem 2.7142857142857144rem;
+}
+.inquiry .manage p.none-cont{
+	display: none;
+    color: #ff9501;
+}
+.inquiry .manage .manage-item{
+    margin-top: 2.142857142857143rem;
+    width: 100%;
+    height: 45.285714285714285rem;
+    background-color: #fff;
+}
+.inquiry .manage .manage-btn{
+    width: 10.714285714285714rem;
+    height: 3.5714285714285716rem;;
+    margin-top: 1.4285714285714286rem;
+    margin-left: 12.857142857142858rem;
+    background-color: #ff9501;
+    color: #fff;
+    font-size: 1.1428571428571428rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.inquiry .manage .manage-item dl dt,dd{
+    color: #7f7f7f;
+    line-height: 2.857142857142857rem;
+    font-size: 1rem;
+}
+/* �������Ϣ��ʽ���ý��� */
+
+/* �������֤��ʽ���ÿ�ʼ */
+.inquiry .manage .manage-consume{
+    display: none;
+    width: 100%;
+    height: 8.571428571428571rem;
+    background-color: #fff;
+    border-bottom: 1px solid #F5F5F5;
+    margin-bottom: 2.142857142857143rem;
+}
+.inquiry .manage .manage-consume img{
+    margin-left: 2.857142857142857rem;
+    width: 2.857142857142857rem;
+    height: 2.857142857142857rem;;
+}
+.inquiry .manage .manage-consume p{
+    margin-left: 1rem;
+    display: inline-block;
+    line-height: 8.571428571428571rem;
+    font-weight: 600;
+}
+#loadImg{
+	display: none;
+	margin-left: 54rem;
+}
+/* �������֤��ʽ���ý���

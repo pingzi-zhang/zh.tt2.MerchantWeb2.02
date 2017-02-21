@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>重置密码</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/systemManage/resetPsw.css">
+</head>
+<body>
+	<nav><img src="../../images/TT_logo.png" height="36" width="139"><span></span><a href="">找回密码</a><a href="../login.html">登录</a></nav>
+	<div class="include">
+		<div class="header">
+			<div class="diamond"><span></span></div>
+			<div class="line"></div>
+			<div class="diamond"><span></span></div>
+			<div class="line"></div>
+			<div class="diamond"><span></span></div>
+		</div>
+		<!--<p class="step"><span>找回方式</span><span>安全验证</span><span>重置密码</span></p>-->
+		<p class="warning"></p>
+		<div class="telephone">
+			<p class="username">账号
+				<input type="text" placeholder="手机号" required="required" id="busPhone">
+				<em class=""><s></s></em>
+				<span class="help-tit"></span>
+				<span class="warning">账号不存在</span>
+			</p>
+		</div>
+		<div class="validatecode">
+			<p class="warning"></p>
+			<p class="input-code">
+				<input type="text" class="Info-Pw"  placeholder="输入手机验证码" />
+				<a class="active">获取验证码</a>
+			</p>
+			<span class="getCode">收不到短信？</span><span class="tip" id="tip">请先获取验证码</span>
+		</div>
+		<div class="mima">
+			<p class="warning">密码是由大写字母、小写字母、数字组成</p>
+			<p class="setPassword">
+				<input type="password" placeholder="设置新密码" id="new1">
+				<em class="help-tit">新密码必须填写</em>
+			</p>
+		</div>
+		<p class="newPassword">
+			<input type="password" placeholder="确认新密码" id="new2">
+			<em class="help-tit">确认密码必须填写</em>
+		</p>
+		<a href="javascript:void (0)" class="button" id="submit">提交</a>
+	</div>
+	<footer><p>Copyright © 2016 traveltailor.cn All Rights Reserved 蜀ICP备16021</p></footer>
+	<script src="../../js/Config.js"></script>
+	<script src="../../lib/jquery/jquery.min.js"></script>
+	<script src="../../lib/jquery.validate.min.js"></script>
+	<script src="../../js/common.js"></script>
+	<script src="../../js/systemManage/resetPsw.js"></script>
+	<!--网站后台配置js文件-->
+	<script src="../../js/crypto-js.js"></script>
+	<script src="../../js/Global.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,317 @@
+@charset "utf-8";
+.bgc {
+  background-color: #ffac4f;
+}
+.input-line {
+  width: 3rem;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #ccc;
+  height: 1.5rem;
+  padding-left: 1rem;
+}
+.addTicket header {
+  height: 5.0625rem;
+  background-color: #fff;
+  border-top: 20px solid #F5F5F5;
+  border-bottom: 1px solid #f5f5f5;
+  margin-bottom: 1.875rem;
+}
+.addTicket header h2 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  height: 1.25rem;
+  font-weight: bold;
+  margin: 1.25rem 0 0 1.25rem;
+  border-left: 2px solid #ffac4f;
+  padding-left: 1.25rem;
+}
+.addTicket section i {
+  color: red;
+}
+.addTicket section p {
+  height: 4.375rem;
+  padding-top: 0.625rem;
+}
+.addTicket section p span {
+  width: 7.5rem;
+  height: 3.125rem;
+  display: inline-block;
+  text-align: right;
+  line-height: 3.125rem;
+  padding-right: 0.625rem;
+}
+.addTicket section p input {
+  width: 54rem;
+  height: 3.125rem;
+  padding-left: 1.25rem;
+}
+.addTicket section #orderTime{
+	width: 9rem;
+}
+.addTicket section .tipTxt{
+	width: 9.5rem;
+	color: #cccccc;
+}
+.addTicket section .help-block {
+  display: none;
+  color: #ffac4f;
+}
+.addTicket section .help-block s {
+  width: 0.875rem;
+  height: 0.875rem;
+  display: inline-block;
+  background: url("../../images/tips.png");
+  background-size: 100%,100%;
+  vertical-align: top;
+  margin: 0.125rem 0.3125rem 0 0;
+}
+.addTicket .baseInfo {
+  margin-bottom: 2rem;
+}
+.addTicket .product_Info .productDisc {
+	height: 245px;
+}
+.addTicket input.orderHour{
+	width: 6rem;
+}
+.addTicket .product_Info .productDisc span {
+  float: left;
+  margin-right: 1.5rem;
+  margin-left: 3rem;
+}
+.addTicket .product_Info .productDisc #productDisc,
+.addTicket .product_Info .productDisc #orderDisc ,
+.addTicket .product_Info .productDisc #importantTerms ,
+.addTicket .product_Info .productDisc #textDescribe,
+.addTicket .product_Info .productDisc #backRule ,
+.addTicket .product_Info .productDisc #useMethod{
+  float: left;
+  /*width: 71.42857142857143rem;*/
+  height: 14.428571rem; 
+  width: 50%;
+}
+.addTicket .product_Info .productDisc  #edui1{
+  width: 71.42857142857143rem;
+  height: 14.428571rem;
+  
+}
+.addTicket .product_Info .productDisc  #edui1 #edui1_iframeholder
+{
+  height: 21.12.028571rem !important;
+}
+.addTicket .product_Info .productDisc #edui1 #edui1_toolbarbox
+ {
+  height: 2.5rem;
+}
+.addTicket .product_Info .productDisc #edui1 #edui1_toolbarbox #edui1_toolbarboxouter
+ {
+  height: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+#edui50,#edui191,#edui144,#edui97{
+	height: 17.3rem;
+}
+.addTicket .product_Info .productDisc #edui1 #edui1_toolbarbox #edui1_toolbarboxouter #edui1{
+  position: absolute;
+  top: 0.3125rem;
+  left: 0.3125rem;
+}
+.addTicket .product_Info  .productDisc #edui1 #edui1_bottombar,
+#edui97_bottombar,
+#edui191_bottombar,
+#edui144_bottombar,
+#edui50_bottombar{
+  display: none;
+}
+.addTicket .productIntroduction_img{
+	top: 10rem;
+}
+
+#product_album_list .imgClear{
+	left: -2rem;
+    top: -3.2857142857142856rem;
+}
+#product_album_list div{
+	display:inline-block;
+	position: relative;
+}
+.addTicket .productIntroduction_img .imgClear{
+	position: absolute;
+    background-color: #333333;
+    color: #ffffff;
+    width: 1.7857142857142858rem;
+    height: 1.7857142857142858rem;
+    left: 13.728571rem;
+    top: 1.2857142857142858rem;
+    z-index: 999;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.7857142857142858rem;
+    cursor: pointer;
+}
+.addTicket .productIntroduction_img .product_img {
+  height: 12.8125rem;
+  position: relative;
+  margin-top: -1.875rem;
+}
+.addTicket .productIntroduction_img .product_img span {
+  width: 7.5rem;
+  height: 12.8125rem;
+  display: inline-block;
+  text-align: right;
+  line-height: 6.25rem;
+  padding-right: 0.625rem;
+}
+.addTicket .productIntroduction_img .product_img .upload_photo {
+  position: absolute;
+  top: 0.625rem;
+  left: 6.25rem;
+}
+.addTicket .productIntroduction_img .product_img .upload_photo .tips_suc2 {
+  position: absolute;
+  top: 1.875rem;
+  left: 4.375rem;
+}
+.addTicket .productIntroduction_img .product_img .upload_photo #product_img {
+  width: 12.5rem;
+  height: 12.5rem;
+  position: absolute;
+  margin-left: 1.6rem;
+}
+.addTicket .productIntroduction_img .product_img .upload_photo #product_img .webuploader-pick {
+  margin-top: 1.25rem;
+  float: left;
+  width: 12.5rem;
+  height: 9.375rem;
+  background: url("../../images/photo.png");
+  background-size: 100% 100%;
+  margin-left: 1.5625rem;
+}
+
+.addTicket .productIntroduction_img .product_album {
+  height: 12.8125rem;
+  position: relative;
+  margin-top: -1.875rem;
+}
+.addTicket .productIntroduction_img .product_album span {
+  width: 7.5rem;
+  height: 12.8125rem;
+  display: inline-block;
+  text-align: right;
+  line-height: 6.25rem;
+  padding-right: 0.625rem;
+}
+.addTicket .productIntroduction_img .product_album .upload_photo {
+  position: absolute;
+  top: 0.625rem;
+  left: 6.25rem;
+  padding-top: 1.25rem;
+  padding-left: 1.5rem;
+}
+.addTicket .productIntroduction_img .product_album .upload_photo #product_album_list {
+  float: left;
+}
+.addTicket .productIntroduction_img .product_album .upload_photo #product_album_list s {
+  width: 1.7857142857142858rem;
+  height: 1.7857142857142858rem;
+  background-image: url(../../images/delectOn.png);
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  display: none;
+}
+.addTicket .productIntroduction_img .product_album .upload_photo #product_album_list img {
+  width: 12.5rem;
+  height: 9.375rem;
+  margin-left: 1.3012857142857144rem;
+  position: relative;
+}
+.addTicket .productIntroduction_img .product_album .upload_photo #product_album {
+  float: left;
+  width: 12.5rem;
+  height: 12.5rem;
+}
+.addTicket .productIntroduction_img .product_album .upload_photo #product_album .webuploader-pick {
+  float: left;
+  width: 12.5rem;
+  height: 9.375rem;
+  background: url("../../images/upload-add.png");
+  background-size: 100% 100%;
+  margin-left: 1.5rem;
+}
+.addTicket footer {
+  margin-top: 1.875rem;
+  height: 12.1875rem;
+  border-top: 20px solid #F5F5F5;
+  padding-left: 7rem;
+}
+.addTicket footer a,
+.addTicket footer input {
+  display: inline-block;
+  line-height: 3.125rem;
+  text-align: center;
+  width: 9.375rem;
+  height: 3.125rem;
+  background-color: #FF9501;
+  color: #fff;
+  margin: 2.5rem 2.5rem 0 0;
+}
+/*图片描述去掉*/
+.addTicket .productIntroduction_text{
+	display: none;
+}
+.addTicket select{
+	width: 10.3rem;
+	height: 3rem;
+	padding-left: 1.25rem;
+}
+.productDisc{
+	height: 10rem;
+}
+.addTicket .webuploader-pick{
+	background-color: #FF9501;
+}
+
+/*图文描述*/
+.addTicket section p.textDescribe{
+  height: 19.285714285714285rem;
+}
+.addTicket .textDescribe span {
+  float: left;
+}
+#ueditor_0{
+	height: 14.5rem;
+}
+.addTicket .textDescribe #textDescribe {
+  float: left;
+  /*width: 71.42857142857143rem;*/
+ width: 50%;
+  height: 17.428571428571427rem;
+  margin-left: 2rem;
+}
+#filePicker1{
+	margin-left: 9rem;
+}
+.addTicket .textDescribe #textDescribe #edui1 {
+  width: 71.42857142857143rem;
+  height: 24.428571428571427rem;
+}
+.addTicket  .textDescribe #textDescribe #edui1 #edui1_iframeholder {
+  height: 21.428571428571427rem!important;
+}
+.addTicket  .textDescribe #textDescribe #edui1 #edui1_toolbarbox {
+  height: 2.5rem;
+}
+.addTicket  .textDescribe #textDescribe #edui1 #edui1_toolbarbox #edui1_toolbarboxouter {
+  height: 2.5rem;
+  position: relative;
+}
+.addTicket  .textDescribe #textDescribe #edui1 #edui1_toolbarbox #edui1_toolbarboxouter #edui2 {
+  position: absolute;
+  top: 0.3125rem;
+  left: 0.3125rem;
+}
+.addTicket  .textDescribe #textDescribe #edui1 #edui1_bottombar {
+  display: none;
+}

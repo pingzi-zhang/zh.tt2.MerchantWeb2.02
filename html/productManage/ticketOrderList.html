@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>门票列表</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/productManage/foodOrdersList.css">
+</head>
+<body>
+<!--TODO 自己项目页面内容-->
+<section>
+    <div class="bgc"></div>
+    <div class="orderManage">
+        <div class="orderList">
+            <form action="" class="form">
+                产品状态&nbsp;
+                <select class="searchVariety">
+                    <option selected>全部</option>
+                    <option>未提交</option>
+                    <option>已提交</option>
+                    <option>已上架</option>
+                    <option>已下架</option>
+                    <option>未通过</option>
+                </select>
+                                产品号&nbsp;
+                <input type="text" placeholder="请输入产品号" class="searchCode">
+                产品名称&nbsp;
+                <input type="text"  placeholder="请输入产品名称" class="searchName">
+                <a href="javascript:void (0)" id="search">查询</a>
+                <a href="addTicket.html" class="add">添加门票</a>
+            </form>
+        </div>
+        <table class="table">
+            <thead>
+                <tr id="theader">
+                    <th>产品号</th>
+                    <th>首图</th>
+                    <th>产品名称</th>
+                    <th>分销价</th>
+                    <th>零售价</th>
+                    <th>状态</th>
+                    <th>创建时间</th>
+                    <th>操作</th>
+                </tr>
+                <!--<tr>
+                    <td>MP14523</td>
+                    <td><img src="../../images/food.png" alt=""></td>
+                    <td>双料排骨，建议4人使用</td>
+                    <td>￥288.00</td>
+                    <td>￥288.00</td>
+                    <td>未提交</td>
+                    <td>2016/11/04  11 : 18</td>
+                    <td>
+                        <a href="javascript:void (0)" class="audit orenge">查看</a>
+                        <a href="javascript:void (0)" class="orenge">提交</a>
+                        <a href="javascript:void (0)" class="orenge">修改</a>
+                    </td>
+                </tr>--> 
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</section>
+<img id="loadImg" src="../../images/load.gif"/>
+<p class="content">未查找到符合条件的记录</p>
+<footer>
+	<div class="page">
+		<p>共有 <span id="totalR"></span> 条</p>
+		<div class="pagination paging"></div>
+	</div>
+</footer>
+<!-- 下架模态视图 -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 500px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title text-left" id="myModalLabel">确认信息</h4>
+            </div>
+            <div class="modal-body">
+                <dl class="dl-horizontal">
+                    <dt><img src="../../images/resetpassword.png" alt=""/></dt>
+                    <dd>确定要下架？</dd>
+                </dl>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="dis">取消</button>
+                <button type="button" class="btn btn-primary" id="auditBtn">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 提交模态视图 -->
+<div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 500px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title text-left" id="myModalLabel">确认信息</h4>
+            </div>
+            <div class="modal-body">
+                <dl class="dl-horizontal">
+                    <dt><img src="../../images/resetpassword.png" alt=""/></dt>
+                    <dd>确定要提交？</dd>
+                </dl>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="dis">取消</button>
+                <button type="button" class="btn btn-primary" id="confirmBtn">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--模板数据渲染-->
+<script type="text/html" id="template">
+    {{each items as list index}}
+    <tr>
+        <td>{{list.Code}}</td>
+        <td><img src={{list.First}}></td>
+        <td>{{list.ProductName}}</td>
+        <td>￥{{list.Buy}}</td>
+        <td>￥{{list.Market}}</td>
+        <td>{{list.StatusName}}</td>
+        <td>{{list.Create}}</td>
+        <td class="oper" data={{list.ProductID}}>
+            <!--<a href="javascript:void (0)" class="audit orenge check">查看</a>
+            <a href="javascript:void (0)" class="orenge submit">提交</a>
+            <a href="javascript:void (0)" class="orenge modify">修改</a>-->
+        </td>
+    </tr>
+    {{/each}}
+</script>
+<script src="../../js/Config.js"></script>
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../js/template.js"></script>
+<script src="../../js/jquery.page.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/productManage/ticketOrderList.js"></script>
+
+<!--网站后台配置js文件-->
+<script src="../../js/crypto-js.js"></script>
+<script src="../../js/Global.js"></script>
+
+</body>
+</html>

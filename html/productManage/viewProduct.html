@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title>美食详情</title>
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../lib/webuploader/webuploader.css">
+    <link rel="stylesheet" href="../../lib/jedate/skin/jedate.css">
+    <link rel="stylesheet" href="../../css/productManage/viewProduct.css">
+</head>
+<body>
+<!--TODO 自己项目页面内容-->
+<section>
+    <div class="ticket">
+        <form action="">
+            <div class="baseInfo" id="baseInfo">
+                <header>
+                    <h2>基本信息</h2>
+                </header>
+                <section>
+                    <p>
+                        <span>套餐标题:</span>
+                        <span></span>
+                        <!--<span>烤全鱼</span>-->
+                    </p>
+                    <p>
+                        <span>用餐时段:</span>
+                        <span></span>
+                        <!--<span>午餐、晚餐</span>-->
+                    </p>
+                    <p>
+                        <span>星期几接待:</span>
+                        <span></span>
+                        <!--<span>午餐、晚餐</span>-->
+                    </p>
+                    <p>
+                        <span>接待时间:</span>
+                        <span></span>
+                        <!--<span>午餐、晚餐</span>-->
+                    </p>
+                    <p>
+                        <span>用餐时长限制:</span>
+                        <span></span>
+                        <!--<span>3-4人餐</span>-->
+                    </p>
+                </section>
+            </div>
+            <div class="productPrice" id="productPrice">
+                <header>
+                    <h2>产品价格</h2>
+                </header>
+                <section>
+                    <p>
+                        <span>分销价:</span>
+                        <span>85</span>
+                    </p>
+                    <p>
+                        <span>门店价:</span>
+                        <span>90</span>
+                    </p>
+                </section>
+            </div>
+            <div class="proInfo" id="proInfo">
+                <header>
+                    <h2>购买须知</h2>
+                </header>
+                <section>
+                    <p>
+                        <span>是否支持随时退:</span>
+                        <span>是</span>
+                    </p>
+                    <p>
+                        <span>套餐券有效期:</span>
+                        <span>30天</span>
+                    </p>
+                    <div class="useRule" id="useRule">
+                    	<span>使用规则:</span>
+                    	<div>
+                    		<!--<p>尽快使用，扫码消费尽快使用，扫码消费尽快使用，扫码消费尽快使用，扫码消费尽快使用，扫码消费尽快使用，扫码消费尽快使用，尽快使用，扫码消费尽快使用，扫码消费尽快使用，扫码消费尽快使用，扫码消费尽快使用，扫码消费尽快使用，扫码消费尽快使用，</p>
+                    		<p>尽快使用，扫码消费尽快使用，扫码消费尽快使用，扫码消费尽快使用，扫码消费尽快使用，</p>
+                    		<p>尽快使用，扫码消费尽快使用，扫码消费尽快使用，扫码消费尽快使用，扫码消费尽快使用，</p>
+                    		<p>尽快使用，扫码消费尽快使用，扫码消费尽快使用，扫码消费尽快使用，扫码消费尽快使用，</p>
+                    		<p>扫码消费尽快使用，扫码消费尽快使用，</p>
+                    		<p>扫码消费尽快使用，扫码消费尽快使用，</p>
+                    		<p>扫码消费尽快使用，扫码消费尽快使用，</p>
+                    		<p>扫码消费尽快使用，扫码消费尽快使用，</p>
+                    		<p>扫码消费尽快使用，扫码消费尽快使用，</p>-->
+                    	</div>
+                    </div>
+                </section>
+            </div>
+            <div class="productIntroduction_img">
+                <header>
+                    <h2>产品介绍</h2>
+                </header>
+                <section>
+                    <div class="product_img" id="productImg">
+                        <span>产品首图:</span>
+                        <img class="upload_photo" id="fitstPic" src="">
+                    </div>
+                    <div class="product_album" id="productAlbum">
+                        <span>产品相册:</span>
+                        <div class="upload_photo" id="product_album_list">
+                            <!--<img/>
+                            <img/>-->
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <a href="ticketOrderList.html" id="back">返回</a>
+            </footer>
+        </form>
+    </div>
+</section>
+<script src="../../js/Config.js"></script>
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/webuploader/webuploader.min.js"></script>
+<script src="../../lib/jedate/jquery.jedate.min.js"></script>
+<script src="../../lib/ueditor/ueditor.config.js"></script>
+<script src="../../lib/ueditor/ueditor.all.js"></script>
+<script src="../../lib/jquery.validate.min.js"></script>
+<script src="../../lib/angular/angular.min.js"></script>
+<script src="../../js/template.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/productManage/viewProduct.js"></script>
+
+<!--网站后台配置js文件-->
+<script src="../../js/crypto-js.js"></script>
+<script src="../../js/Global.js"></script>
+
+
+</body>
+</html>

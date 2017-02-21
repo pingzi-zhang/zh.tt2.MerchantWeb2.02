@@ -1,0 +1,138 @@
+.balance{
+    border-top: 20px solid #F5F5F5;
+    width: 100%;
+    height: 16.428571428571427rem;
+}
+.balance .notice{
+    margin-left: 2.5rem;
+    margin-top: 4.375rem;
+    height: 0.95rem;
+}
+.balance .balance-num{
+    font-size: 2.125rem;
+    color: #FF9501;
+    margin-left: 2.5rem;
+}
+.balance .withdraw-btn{
+    display: inline-block;
+    width: 7.142857142857143rem;
+    height: 3.5714285714285716rem;
+    color: #FFFFFF;
+    /*text-align: center;*/
+    line-height: 3.5714285714285716rem;
+    background-color: #FF9501;
+    border-radius: 2px;
+    margin-top: 1.25rem;
+    margin-left: 2.625rem;
+    vertical-align: bottom;
+}
+/*.record{
+    position: relative;
+}*/
+.record  .record-text{
+    width: 100%;
+    height: 5.428571428571429rem;
+    background-color: #F5F5F5;
+    font-weight: 600;
+    font-size: 1.1428571428571428rem;
+    padding:  2.7142857142857144rem 0 1.4285714285714286rem 2.7142857142857144rem;
+}
+/*.record .record-text{
+    height: 4.75rem;
+    background-color: #F5F5F5;
+    padding-top: 2rem;
+    padding-left: 1.8rem;
+    font-size: 0.75rem;
+    font-weight: bolder;
+}*/
+.record .table{
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 6.428571428571429rem;
+}
+.record .table tr{
+    width: 100%;
+    height: 4.285714285714286rem;
+    background-color: #fffbf2;
+}
+.record .table tr th{
+    font-size: 1.0714285714285714rem;
+    border-bottom: none;
+    padding: 0.7142857142857143rem 0 0.7142857142857143rem 2.7142857142857144rem;
+    vertical-align: middle;
+}
+.record .table tr td{
+    font-size: 1.0714285714285714rem;
+    background-color: #fff;
+    color: #7f7f7f;
+    vertical-align: middle;
+    padding: 0.7142857142857143rem 0 0.7142857142857143rem 2.7142857142857144rem;
+    border-top: none;
+    border-bottom: 1px solid #ddd;
+}
+.record p.content{
+    margin: 2.5rem 0 0 2.5rem;
+    color: #ff9501;
+    display: none;
+}
+/*.record .count{
+    position: fixed;
+    left: 2.857142857142857rem;
+    bottom: 2.5714285714285716rem;
+    color: #999;
+}
+.record .count span{
+    color: #ff9501;
+}*/
+.page{
+    width: 100%;
+    height: 5.714285714285714rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #f5f5f5;
+    display: none;
+}
+.page .total{
+    position: fixed;
+    left: 2.857142857142857rem;
+    bottom: 2.5714285714285716rem;
+    color: #999;
+}
+.page .total span{
+    color: #ff9501;
+}
+.page .paging{
+    position: fixed;
+    right: 2.857142857142857rem;
+    bottom: 2.5714285714285716rem;
+    margin: 0;
+}
+.page .paging a,
+.page .paging span {
+    margin-left: 0.875rem;
+    color: #666666;
+}
+.page .paging .current {
+    color: #ff9501;
+}
+.page .paging .prev,
+.page .paging .next
+ {
+    color: #666;
+}
+/*.page .paging .current {
+    color: #ff9501;
+}
+.page .paging .prev {
+    color: #666;
+}*/
+/*.record .total{
+    position: fixed;
+    left: 2.857142857142857rem;
+    bottom: 2.5714285714285716rem;
+    color: #999;
+}*/
+.text-color{
+    color: #FF9501;
+}

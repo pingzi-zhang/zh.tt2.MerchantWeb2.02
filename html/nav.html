@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <title id="title">商家列表</title>
+    <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <!--TODO 自己项目的文件-->
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/crypto-js.js"></script>
+    <script src="../js/Config.js"></script>
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<!--TODO 自己项目页面内容-->
+<div class="traveltailor_business">
+    <nav class="sideBar">
+        <div class="logo">
+            <s></s>
+        </div>
+        <ul>
+            <li class="manage_order"><a href="#"><span class="icon_order icon"></span>订单管理<span class="arrow_icon"></span></a></li>
+           <!--<li class="sub_menu sub_order isHide" myAttr ="orderManage/orderlist.html"><a href="javascript:void (0)">美食</a></li>
+            <li class="manage_product"><a href="#"><span class="icon_product icon"></span>产品管理<span class="arrow_icon"></span></a></li>
+            <li class="sub_menu sub_product isHide" myAttr="productManage/foodOrdersList.html"><a href="#">美食</a></li>
+            <li class="manage_saleQuery"><a href="#"><span class="icon_sale icon"></span>销售查询<span class="arrow_icon"></span></a></li>-->
+            <li class="sub_menu sub_order isHide" myAttr ="orderManage/orderlist.html"><a href="javascript:void (0)">门票</a></li>
+            <li class="sub_menu sub_order isHide" myAttr ="orderManage/specialtyOrder.html"><a href="javascript:void (0)">特产</a></li>
+            <li class="sub_menu sub_order isHide" myAttr ="orderManage/orderlist.html"><a href="javascript:void (0)">服务</a></li>
+            <li class="sub_menu sub_order isHide" myAttr ="orderManage/orderlist.html"><a href="javascript:void (0)">路线</a></li>
+            <li class="sub_menu sub_order isHide" myAttr ="orderManage/orderlist.html"><a href="javascript:void (0)">酒店</a></li>
+            <li class="sub_menu sub_order isHide" myAttr ="orderManage/orderlist.html"><a href="javascript:void (0)">签证</a></li>
+            <li class="sub_menu sub_order isHide" myAttr ="orderManage/orderlist.html"><a href="javascript:void (0)">组合</a></li>
+            <li class="sub_menu sub_order isHide" myAttr ="orderManage/orderlist.html"><a href="javascript:void (0)">美食</a></li>
+            <li class="manage_product"><a href="#"><span class="icon_product icon"></span>产品管理<span class="arrow_icon"></span></a></li>
+            <li class="sub_menu sub_product isHide" myAttr ="productManage/ticketOrderList.html"><a href="#">门票</a></li>
+            <li class="sub_menu sub_product isHide" myAttr ="productManage/specialtyOrderList.html"><a href="#">特产</a></li>
+            <li class="sub_menu sub_product isHide"><a href="#">服务</a></li>
+            <li class="sub_menu sub_product isHide"><a href="#">路线</a></li>
+            <li class="sub_menu sub_product isHide"><a href="#">酒店</a></li>
+            <li class="sub_menu sub_product isHide"><a href="#">签证</a></li>
+            <li class="sub_menu sub_product isHide"><a href="#">组合</a></li>
+            <li class="sub_menu sub_product isHide" myAttr="productManage/foodOrdersList.html"><a href="#">美食</a></li>
+            <li class="manage_saleQuery"><a href="#"><span class="icon_sale icon"></span>销售查询<span class="arrow_icon"></span></a></li>
+            <li class="sub_menu sub_saleQuery isHide" myAttr="saleQuery/orderInquiry.html"><a href="#">门票</a></li>
+            <li class="sub_menu sub_saleQuery isHide" myAttr="saleQuery/orderInquiry.html"><a href="#">特产</a></li>
+            <li class="sub_menu sub_saleQuery isHide" myAttr="saleQuery/orderInquiry.html"><a href="#">服务</a></li>
+            <li class="sub_menu sub_saleQuery isHide" myAttr="saleQuery/orderInquiry.html"><a href="#">路线</a></li>
+            <li class="sub_menu sub_saleQuery isHide" myAttr="saleQuery/orderInquiry.html"><a href="#">酒店</a></li>
+            <li class="sub_menu sub_saleQuery isHide" myAttr="saleQuery/orderInquiry.html"><a href="#">签证</a></li>
+            <li class="sub_menu sub_saleQuery isHide" myAttr="saleQuery/orderInquiry.html"><a href="#">组合</a></li>
+            <li class="sub_menu sub_saleQuery isHide" myAttr="saleQuery/orderInquiry.html"><a href="#">美食</a></li>
+            <li class="manage_sale"><a href="#"><span class="icon_account icon"></span>财务管理<span class="arrow_icon"></span></a></li>
+            <li class="sub_menu sub_sale" myAttr="financeManage/finOverview.html"><a href="#">财务概览</a></li>
+            <li class="sub_menu sub_sale" myAttr="financeManage/withdrawList.html"><a href="#">提现管理</a></li>
+            <li class="manage_system"><a href="#"><span class="icon_system icon"></span>系统管理<span class="arrow_icon"></span></a></li>
+            <li class="sub_menu sub_system" myAttr="systemManage/editMyInfo.html"><a href="javascript:void (0)">我的资料</a></li>
+            <li class="sub_menu sub_system" myAttr="systemManage/myAccount.html"><a href="javascript:void (0)">我的账户</a></li>
+            <li class="sub_menu sub_system" myAttr="systemManage/changePwd.html"><a href="#">修改密码</a></li>
+        </ul>
+        <div class="link_us">
+            <p>致慧科技（中国）有限公司</p>
+            <p>客服电话：028-8729-4247</p>
+        </div>
+    </nav>
+    <aside class="content">
+        <header>
+            <div class="header-l fl_left">
+                <span class="path1">产品管理</span>
+                <span>&nbsp;> </span>
+                <span class="path2 on">美食</span>
+            </div>
+            <div class="header-r fl_right">
+                <span class="avatar" id="avatar"></span>
+                <span class="name" id="name"></span>
+                <span class="quit">退出</span>
+            </div>
+        </header>
+        <section>
+            <iframe src="productManage/foodOrdersList.html" frameborder="0" id="myIframe" width="100%" height="100%"></iframe>
+        </section>
+    </aside>
+</div>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/nav.js"></script>
+<!--网站后台配置js文件-->
+<script src="../js/Global.js"></script>
+</body>
+</html>

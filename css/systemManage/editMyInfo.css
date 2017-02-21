@@ -1,0 +1,55 @@
+.bg{
+	height: 1.25rem;
+	background-color: #f5f5f5;
+}
+.myInfo{
+	padding-top: 1.25rem;
+	background-color: #FFFFFF;
+}
+.myInfo span
+{
+  display: inline-block;
+  height: 2.1875rem;
+  line-height: 2.1875rem;
+  color: #a7a7a7;
+}
+.myInfo p{
+	padding-left: 2.5rem;
+	width: 89rem;
+}
+.myInfo p span:nth-of-type(1){
+	width: 6.875rem;
+	text-align: right;
+}
+.myInfo p span:nth-of-type(2){
+	color: #333333;
+}
+.myInfo .license_pic{
+	 vertical-align: top;
+	 margin-top: 0.625rem;
+	 margin-bottom: 1.875rem;
+}
+.myInfo .gap{
+	 margin-top: 1.25rem;
+}
+.myInfo a{
+	 color: #ff9501;
+	 margin-left: 1.0625rem;
+}
+.myInfo footer{
+	margin-top: 2.0625rem;
+	height: 8.4375rem;
+	background-color: #f5f5f5;
+}
+.myInfo footer a{
+	 display: inline-block;
+	 width: 9.375rem;
+	 height: 3.125rem;
+	 background-color: #FF9501;
+   color: #fff;
+   line-height: 3.125rem;
+   text-align: center;
+   font-size: 1rem;
+   border-radius: 3px;
+   margin: 2.5rem 0 0 9.75rem;
+}

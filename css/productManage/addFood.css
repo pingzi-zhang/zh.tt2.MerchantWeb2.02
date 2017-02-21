@@ -1,0 +1,734 @@
+@charset "utf-8";
+.bgc {
+  background-color: #FF9501;
+}
+.del{
+	width: 3.5714285714285716rem;
+	height: 1.7857142857142858rem;
+	background-color: none;
+}
+.addFood header {
+  height: 5.0625rem;
+  background-color: #fff;
+  border-top: 20px solid #F5F5F5;
+  border-bottom: 1px solid #f5f5f5;
+  margin-bottom: 1.875rem;
+}
+.addFood header h2 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  
+  height: 1.25rem;
+  font-weight: bold;
+  margin: 1.25rem 0 0 1.25rem;
+  border-left: 2px solid #ffac4f;
+  padding-left: 1.25rem;
+}
+.addFood section i {
+  color: red;
+}
+.addFood section p {
+  height: 4.375rem;
+  padding-top: 0.625rem;
+}
+.addFood .uploadPhoto{
+	width: 8rem;
+	height: 4rem;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 4rem;
+	background-color: #ff9501;
+	margin-left: 10rem;
+	border-radius: 0.5rem;
+	margin-top: 2rem;
+}
+.addFood .uploadPhoto .webuploader-pick{
+	width: 8rem;
+	height: 4rem;
+	padding: 0;
+	line-height: 4rem;
+	background-color: #ff9501;
+}
+.addFood section p span {
+  width: 7.5rem;
+  height: 3.125rem;
+  display: inline-block;
+  text-align: right;
+  line-height: 3.125rem;
+  padding-right: 0.625rem;
+}
+.addFood section p input {
+  width: 54rem;
+  height: 3.125rem;
+  padding-left: 1.25rem;
+}
+.addFood section .help-block {
+  display: none;
+  color: #ffac4f;
+}
+.addFood section .help-block s {
+  width: 0.875rem;
+  height: 0.875rem;
+  display: inline-block;
+  background: url("../../images/tips.png");
+  background-size: 100%,100%;
+  vertical-align: top;
+  margin: 0.125rem 0.3125rem 0 0;
+}
+.addFood .baseInfo .select {
+	cursor: pointer;
+  height: 7rem;
+  padding-top: 1rem;
+  line-height: 3rem;
+}
+/*用餐时段的选择*/
+.addFood .baseInfo .mSelect {
+    height: 2.75rem;
+    line-height: 2.75rem;
+}
+.addFood .baseInfo .mSelect span {
+    width: 7.5rem;
+    display: inline-block;
+    text-align: right;
+    padding-right: 0.625rem;
+    float: left;
+}
+.addFood .baseInfo .mSelect .on {
+    color: #FF9501;
+}
+.addFood .baseInfo .mSelect div {
+    float: left;
+    width: 5rem;
+    margin-left: 0.25rem;
+}
+.addFood .baseInfo .mSelect div s {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #ccc;
+    float: left;
+    margin: 0.625rem 0.625rem 0 0px;
+}
+.addFood .baseInfo .mSelect .on s {
+    border-color: #FF9501;
+    background: url(../../images/selected.png) -0.125rem -0.125rem;
+    background-size: 120% 120%;
+}
+
+.addFood .baseInfo .select span {
+  width: 7.5rem;
+  display: inline-block;
+  text-align: right;
+  padding-right: 0.625rem;
+}
+.addFood .baseInfo .select div {
+  display: inline-block;
+  color: #a7a7a7;
+  border: 1px solid #ccc;
+  width: 8rem;
+  text-align: center;
+  margin-right: 1.4285714285714286rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.addFood .baseInfo .select .on {
+  color: #fff;
+  background-color: #ffac4f;
+  border: none;
+}
+.addFood .baseInfo .select .custom {
+  width: 4.5rem;
+  text-align: center;
+  height: 3rem;
+  line-height: 3rem;
+  margin-right: 0.7142857142857143rem;
+}
+.addFood .baseInfo .select div.custom {
+  color: #fff;
+  cursor: pointer;
+  background-color: #ffac4f;
+  border: none;
+}
+.addFood .foodIntroduce section a {
+  display: block;
+  width: 10.714285714285714rem;
+  height: 3.5714285714285716rem;
+  background-color: #FF9501;
+  text-align: center;
+  line-height: 3.5714285714285716rem;
+  margin: 2.857142857142857rem 0 0 2.857142857142857rem;
+}
+.addFood .buyTips .select {
+  height: 2.75rem;
+  line-height: 2.75rem;
+}
+.addFood .buyTips .select span {
+  width: 10rem;
+  display: inline-block;
+  text-align: right;
+  padding-right: 0.625rem;
+  float: left;
+}
+.addFood .buyTips .select div {
+  float: left;
+  width: 5rem;
+  margin-left: 0.25rem;
+}
+.addFood .buyTips .select div s {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #ccc;
+  float: left;
+  margin: 0.625rem 0.625rem 0 0px;
+}
+.addFood .buyTips .select .on {
+  color: #FF9501;
+}
+.addFood .buyTips .select .on s {
+  border-color: #FF9501;
+  background: url("../../images/selected.png") -0.125rem -0.125rem;
+  background-size: 120% 120%;
+}
+.addFood .buyTips p .validity {
+  width: 3rem;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #ccc;
+  height: 1.5rem;
+  padding-left: 1rem;
+}
+.addFood .buyTips p #inpstart,
+.addFood .buyTips p #inpend {
+  width: 14.285714285714286rem;
+}
+.addFood .buyTips p span {
+  width: 10rem;
+}
+.addFood .buyTips .userTime input {
+  background: url("../../images/date.png") no-repeat 12rem center;
+}
+.addFood .buyTips .userRules {
+  height: 24.285714285714285rem;
+}
+.addFood .buyTips .userRules span {
+  float: left;
+}
+.addFood .buyTips .userRules #userRules {
+  float: left;
+  /*width: 71.42857142857143rem;*/
+ width: 50%;
+  height: 21.428571428571427rem;
+}
+.addFood .buyTips .userRules #userRules .edui-editor {
+  width: 71.42857142857143rem;
+  height: 21.428571428571427rem;
+}
+/*添加商品记录的tr样式*/
+.addFood .foodIntroduce table{
+	margin-top: 2.857142857142857rem;
+}
+
+.addFood .foodIntroduce th{
+	height: 4.285714285714286rem;
+	line-height: 4.285714285714286rem;
+	background-color:#fffaf2 ;
+	border: none;
+}
+.addFood .foodIntroduce td{
+	height: 7.857142857142857rem;
+	padding: 0;
+	line-height: 7.857142857142857rem;
+}
+.addFood .foodIntroduce tr:nth-of-type(1) td{
+	border-top: none;
+}
+.addFood .foodIntroduce td img{
+	width: 7.142857142857143rem;
+	height: 5.357142857142857rem;
+}
+.addFood .foodIntroduce td span{
+	color: #ffa323;
+}
+.addFood .foodIntroduce td:nth-of-type(2) span{
+	color: #333;
+	display: inline-block;
+	margin-left: 1.5714285714285714rem;
+}
+.addFood .foodIntroduce td:nth-of-type(5n+1){
+ 	  line-height: 2.0rem;
+    padding-top: 2rem;
+}
+.addFood .foodIntroduce th,
+.addFood .foodIntroduce td
+{
+	width: 14.285714285714286rem;
+	padding: 0;
+}
+.addFood .foodIntroduce th:nth-of-type(2),
+.addFood .foodIntroduce td:nth-of-type(2)
+{
+	width: 47.857142857142854rem;
+}
+.addFood .foodIntroduce th:nth-of-type(1),
+.addFood .foodIntroduce td:nth-of-type(1){
+	text-align: center;
+}
+.addFood .foodIntroduce td:nth-of-type(1){
+	line-height: 5.357142857142857rem;
+}
+
+.addFood .buyTips .userRules #userRules .edui-editor .edui-editor-iframeholder {
+  height: 21.428571428571427rem!important;
+}
+.addFood .buyTips .userRules #userRules .edui-editor .edui-editor-toolbarbox {
+  height: 2.5rem;
+}
+.addFood .buyTips .userRules #userRules .edui-editor .edui-editor-toolbarbox .edui-editor-toolbarboxouter {
+  height: 2.5rem;
+  position: relative;
+}
+.addFood .buyTips .userRules #userRules .edui-editor .edui-editor-toolbarbox .edui-editor-toolbarboxouter .edui-toolbar {
+  position: absolute;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  height: 100%;
+  overflow: hidden;
+}
+.addFood .buyTips .userRules #userRules .edui-editor .edui-editor-bottomContainer {
+  display: none;
+}
+.addFood .productIntroduction_text .textDescribe {
+  height: 27.285714285714285rem;
+}
+.addFood .productIntroduction_text .textDescribe span {
+  float: left;
+}
+.addFood .productIntroduction_text .textDescribe #textDescribe {
+  float: left;
+  /*width: 71.42857142857143rem;*/
+ width: 50%;
+  height: 24.428571428571427rem;
+  margin-left: 2rem;
+}
+.addFood .productIntroduction_text .textDescribe #textDescribe #edui1 {
+  width: 71.42857142857143rem;
+  height: 24.428571428571427rem;
+  overflow: hidden;
+}
+.addFood .productIntroduction_text .textDescribe #textDescribe #edui1 #edui1_iframeholder {
+  height: 21.428571428571427rem!important;
+}
+.addFood .productIntroduction_text .textDescribe #textDescribe #edui1 #edui1_toolbarbox {
+  height: 2.5rem;
+}
+.addFood .productIntroduction_text .textDescribe #textDescribe #edui1 #edui1_toolbarbox #edui1_toolbarboxouter {
+  height: 2.5rem;
+  position: relative;
+}
+.addFood .productIntroduction_text .textDescribe #textDescribe #edui1 #edui1_toolbarbox #edui1_toolbarboxouter #edui2 {
+  position: absolute;
+  top: 0.3125rem;
+  left: 0.3125rem;
+  height: 100%;
+  overflow: hidden;
+}
+.addFood .productIntroduction_text .textDescribe #textDescribe #edui1 #edui1_bottombar {
+  display: none;
+}
+.addFood .productIntroduction_img .product_img {
+  height: 12.8125rem;
+  position: relative;
+  margin-top: -1.875rem;
+}
+.addFood .productIntroduction_img .product_img span {
+  width: 7.5rem;
+  height: 12.8125rem;
+  display: inline-block;
+  text-align: right;
+  line-height: 6.25rem;
+  padding-right: 0.625rem;
+}
+.addFood .productIntroduction_img .product_img .upload_photo {
+  position: absolute;
+  top: 0.625rem;
+  left: 6.25rem;
+}
+.addFood .productIntroduction_img .product_img .upload_photo .tips_suc2 {
+  position: absolute;
+  top: 1.875rem;
+  left: 4.375rem;
+}
+.addFood .productIntroduction_img .product_img .upload_photo #product_img {
+  width: 12.5rem;
+  height: 12.5rem;
+  position: absolute;
+  margin-left: 1.5rem;
+}
+.addFood .productIntroduction_img .product_img .upload_photo #product_img .webuploader-pick {
+  margin-top: 1.25rem;
+  float: left;
+  width: 12.5rem;
+  height: 9.375rem;
+  background: url("../../images/photo.png");
+  background-size: 100% 100%;
+  margin-left: 1.5625rem;
+}
+.addFood .productIntroduction_img .product_album {
+  height: 12.8125rem;
+  position: relative;
+  margin-top: -1.875rem;
+}
+.addFood .productIntroduction_img .product_album span {
+  width: 7.5rem;
+  height: 12.8125rem;
+  display: inline-block;
+  text-align: right;
+  line-height: 6.25rem;
+  padding-right: 0.625rem;
+}
+.addFood .productIntroduction_img .product_album .upload_photo {
+  position: absolute;
+  top: 0.625rem;
+  left: 6.25rem;
+  padding-top: 1.25rem;
+  padding-left: 1.5rem;
+}
+.addFood .productIntroduction_img .product_album .upload_photo #product_album_list {
+  float: left;
+}
+.addFood .productIntroduction_img .product_album .upload_photo #product_album_list div{
+	display: inline-block;
+	position: relative;
+}
+.addFood .productIntroduction_img .product_album .upload_photo #product_album_list s {
+  width: 1.7857142857142858rem;
+  height: 1.7857142857142858rem;
+  background-image: url(../../images/delectOn.png);
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  display: none;
+}
+.addFood .productIntroduction_img .product_album .upload_photo #product_album_list .imgClear{
+	position: absolute;
+    background-color: #333333;
+    left: 12.285714285714286rem;
+    color: #ffffff;
+    width: 1.7857142857142858rem;
+    height: 1.7857142857142858rem;
+    top: 0;
+    z-index: 999;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.7857142857142858rem;
+    cursor: pointer;
+}
+.addFood .productIntroduction_img .product_album .upload_photo #product_album_list img {
+  width: 12.5rem;
+  height: 9.375rem;
+  margin-left: 1.3012857142857144rem;
+  position: relative;
+}
+.addFood .productIntroduction_img .product_album .upload_photo #product_album {
+  float: left;
+  width: 12.5rem;
+  height: 12.5rem;
+}
+.addFood .productIntroduction_img .product_album .upload_photo #product_album .webuploader-pick {
+   position: relative;
+  float: left;
+  width: 12.5rem;
+  height: 9.375rem;
+  background: url("../../images/upload-add.png");
+  background-size: 100% 100%;
+  margin-left: 1.5rem;
+}
+
+.addFood .productIntroduction_img .imgClear{
+	position: absolute;
+    background-color: #333333;
+    color: #ffffff;
+    width: 1.7857142857142858rem;
+    height: 1.7857142857142858rem;
+    left: 13.628571rem;
+    top: 1.2857142857142858rem;
+    z-index: 999;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.7857142857142858rem;
+    cursor: pointer;
+}
+#product_album_list .imgClear{
+	left: 12.785714285714286rem;
+}
+
+.addFood footer {
+  margin-top: 1.875rem;
+  height: 12.1875rem;
+  border-top: 20px solid #F5F5F5;
+  padding-left: 7rem;
+}
+.addFood footer a,
+.addFood footer input {
+  display: inline-block;
+  line-height: 3.125rem;
+  text-align: center;
+  width: 9.375rem;
+  height: 3.125rem;
+  background-color: #FF9501;
+  color: #fff;
+  margin: 2.5rem 2.5rem 0 0;
+}
+.layer_bg {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.layer_bg .layer_addFood {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #fff;
+  width: 50rem;
+  height: 37.57142857142857rem;
+}
+.layer_bg .layer_addFood header {
+  width: 100%;
+  padding-left: 1.4285714285714286rem;
+  height: 4.285714285714286rem;
+  line-height: 4.285714285714286rem;
+  background-color: #FF9501;
+}
+.layer_bg .layer_addFood header img {
+  float: right;
+  margin: 1.0714285714285714rem 1.0714285714285714rem 0 0;
+  cursor: pointer;
+}
+.layer_bg .layer_addFood .layer_content {
+  width: 100%;
+  height: 28.571428571428573rem;
+}
+.layer_bg .layer_addFood .layer_content .content_upload {
+  float: left;
+  width: 13.571428571428571rem;
+}
+.layer_bg .layer_addFood .layer_content .content_upload #editUpload_img {
+  width: 8.571428571428571rem;
+  height: 5.714285714285714rem;
+  background: url("../../images/photo.png");
+  background-size: 100% 100%;
+  margin: 2.857142857142857rem 0 0 2.857142857142857rem;
+}
+.layer_bg .layer_addFood .layer_content .content_upload #upload_img {
+  width: 8.571428571428571rem;
+  height: 5.714285714285714rem;
+  background: url("../../images/photo.png");
+  background-size: 100% 100%;
+  margin: 2.857142857142857rem 0 0 2.857142857142857rem;
+}
+.layer_bg .layer_addFood .layer_content .content_input {
+  float: left;
+  color: #ccc;
+  margin-top: 2.857142857142857rem;
+}
+.layer_bg .layer_addFood .layer_content .content_input p {
+  height: 5rem;
+  position: relative;
+}
+.layer_bg .layer_addFood .layer_content .content_input p input,
+.layer_bg .layer_addFood .layer_content .content_input .foodtype
+ {
+  width: 28.571428571428573rem;
+  height: 3.5714285714285716rem;
+  padding-left: 1.0714285714285714rem;
+  color: #000;
+}
+
+.layer_bg .layer_addFood .layer_content .content_input .btn {
+  width: 10.714285714285714rem;
+  height: 3.5714285714285716rem;
+  background-color: #FF9501;
+  color: #fff;
+  margin-left: 5rem;
+}
+#upload_img .webuploader-pick {
+  width: 8.571428571428571rem;
+  height: 5.714285714285714rem;
+  background: url("../../images/photo.png");
+  background-size: 100% 100%;
+}
+#editUpload_img .webuploader-pick {
+  width: 8.571428571428571rem;
+  height: 5.714285714285714rem;
+  background: url("../../images/photo.png");
+  background-size: 100% 100%;
+}
+
+.layer_bg1 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.layer_bg1 .layer_publish {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #fff;
+  width: 50rem;
+}
+.layer_bg1 .layer_publish header {
+  width: 100%;
+  padding-left: 1.4285714285714286rem;
+  height: 4.285714285714286rem;
+  line-height: 4.285714285714286rem;
+  background-color: #FF9501;
+}
+.layer_bg1 .layer_publish header img {
+  float: right;
+  margin: 1.0714285714285714rem 1.0714285714285714rem 0 0;
+  cursor: pointer;
+}
+.layer_bg1 .layer_publish .layer_content {
+  width: 100%;
+  height: 12.5rem;
+  padding-left: 2.857142857142857rem;
+}
+.layer_bg1 .layer_publish .layer_content p {
+  height: 7.142857142857143rem;
+  line-height: 7.142857142857143rem;
+  color: #000;
+}
+.layer_bg1 .layer_publish .layer_content input {
+  float: left;
+  width: 7.142857142857143rem;
+  height: 2.857142857142857rem;
+}
+.layer_bg1 .layer_publish .layer_content .cancel {
+  background-color: #fff;
+  color: #000;
+}
+.layer_bg1 .layer_publish .layer_content .certain {
+  background-color: #FF9501;
+  color: #fff;
+  margin-left: 1.4285714285714286rem;
+}
+.addFood .foodIntroduce .addNewInfo td span{
+	cursor: pointer;
+}
+.addFood section .addFoodSpace{
+	width: 100%;
+	height:17.857142857142858rem;
+	padding-top: 7.142857142857143rem;
+}
+.addFood section .addFoodSpace p{
+	text-align: center;
+	height: 2.857142857142857rem;
+	color:#a9a9a9;
+	line-height: 2.857142857142857rem;
+}
+.addFood section .addFoodSpace p:nth-of-type(2){
+	color: #ff9501;
+	cursor: pointer;
+}
+.addFood section .hidden{
+	display: none;
+}
+/*图片描述去掉*/
+
+ .layer_Tip{
+ 	display: none;
+	position: absolute;
+	left: 5rem;
+	text-indent: 0.7142857142857143rem;
+	color: #ff9501;
+	top: 3.6rem;
+}
+
+._edit{
+	margin-top: 1rem;
+    display: inline-block;
+}
+#layer .pic_tip{
+	color: #ff9501;
+	position: absolute;
+	left: 4rem;
+  top: 13.5rem;
+  display: none;
+}
+#diningNum{
+	position: relative;
+}
+/*自定义人数的弹框*/
+a{
+		color: #FFFFFF;
+		text-decoration: none;
+		display: inline-block;
+		background-color: #ff9501;
+	}
+.addFood .baseInfo div.bounced span{
+	width: 2rem;
+}
+.addFood .baseInfo	div.bounced{
+		position: absolute;
+		border: 1px solid #e6e6e6;
+		width: 260px;
+		height: 80px;
+		border-radius:5px;
+		box-sizing:border-box;
+		padding:20px 0 0 20px;
+		background-color: #FFFFFF;
+		top: 5.7rem;
+		left: 57rem;
+		display: none;
+	}
+	.bounced input{
+		border: 1px solid #e6e6e6;
+		border-radius: 3px;
+		width: 48px;
+		height: 38px;
+		text-align: center;
+	}
+	.bounced a{
+		width: 60px;
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		border-radius: 3px;
+		margin-left: 20px;
+	}
+	.bounced span{
+		color: #e6e6e6;
+	}
+	.bounced:after{
+		content: " ";
+		display: block;
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		top: -14px;
+		left: 35px;
+		border-left: 1px solid #e6e6e6;
+		border-top: 1px solid #e6e6e6;
+		background-color: #FFFFFF;
+		transform:rotate(45deg);
+		-ms-transform:rotate(45deg); 	/* IE 9 */
+		-moz-transform:rotate(45deg); 	/* Firefox */
+		-webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+		-o-transform:rotate(45deg); 	/* Opera */
+	}
+#ueditor_0{
+	height: 18.6rem;
+}

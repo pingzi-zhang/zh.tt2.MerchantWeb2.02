@@ -1,0 +1,176 @@
+body{
+	background-color: #F5F5F5;
+    height: 63.875rem;
+}
+nav{
+	height: 3.75rem;
+	background-color: #FF9501;
+	padding-right: 24.0625rem;
+	padding-left: 22.5625rem;
+	/* line-height: 3.75rem; */
+}
+nav span{
+	display: inline-block;
+	width: 0.0625rem;
+	height: 1.25rem;
+	background-color: #fff;
+	margin-top: 1.25rem;
+	float: left;
+	margin-left: 3rem;
+}
+nav img{
+	float: left;
+	margin-top: 0.4rem;
+}
+nav a{
+	font-size: 0.875rem;
+	display: inline-block;
+	height: 3.75rem;
+	line-height: 3.75rem;
+	float: left;
+	margin-left: 1.0625rem;
+}
+nav a:last-child{
+	float: right;
+}
+.include{
+	width: 70rem;
+	height: 55.625rem;
+	background-color: #fff;
+	margin: 2.5rem auto;
+	padding-top: 15.625rem;
+}
+.include .header{
+	width: 41.6875rem;
+	height: 1.5625rem;
+	margin-left: 12rem;
+}
+.include .header div{
+	float: left;
+}
+.include .header .diamond{
+	width: 1.375rem;
+	height: 1.375rem;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); 	/* IE 9 */
+	-moz-transform:rotate(45deg); 	/* Firefox */
+	-webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+	-o-transform:rotate(45deg); /* Opera */
+	background-color: #989898;
+	text-align: center;
+	line-height: 1.375rem;
+	color: #F0F0F0;	
+}
+.include .header .diamond:first-child{
+	background-color: #FF9501;
+}
+.include .header .diamond span{
+	display: inline-block;
+	transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg); 	/* IE 9 */
+	-moz-transform:rotate(-45deg); 	/* Firefox */
+	-webkit-transform:rotate(-45deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-45deg); /* Opera */
+}
+.include .header .line{
+	width: 17.5rem;
+	height: 0.25rem;
+	border-radius: 4px;
+	background-color: #CBCBCB;
+	margin-top: 0.625rem;
+	margin-left: 0.625rem;
+	margin-right: 0.625rem;
+}
+.include .step{
+	width: 43.875rem;
+	margin-left: 10.75rem;
+	margin-top: 1.125rem;
+}
+.include .step span{
+	width: 14.625rem;
+	display: inline-block;
+	color: #CBCBCB;
+	font-size: 1rem;
+}
+.include .step span:first-child{
+	text-align: left;
+	color: #FF9501;
+}
+.include .step span:nth-child(2){
+	text-align: center;
+}
+.include .step span:last-child{
+	text-align: right;
+}
+.include .username,.code{
+	margin-left: 23.75rem;
+	width: 22.75rem;
+	height: 3rem;
+	/* background-color: #67CBC3; */
+	border: 1px solid #F5F5F5;
+	border-radius: 3px;
+	padding-left: 1.625rem;
+	line-height: 3rem;
+	margin-bottom: 1.875rem;
+	font-size: 0.875rem;
+	color: #666666;
+}
+.include .username input{
+	padding-left: 1.5625rem;
+	/* background-color: #67CBC3; */
+	border: none;
+	height: 2rem;
+}
+.include .code input{
+	padding-left: 1.5625rem;
+	/* background-color: #67CBC3; */
+	border: none;
+	height: 2rem;
+}
+.include .code{
+	float: left;
+}
+.include .button{
+	display: inline-block;
+	margin-left: 23.75rem;
+	width: 22.75rem;
+	height: 3rem;
+	background-color: #FF9501;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 3rem;
+	font-size: 1rem;
+}
+.include .change{
+	margin-left: 1.875rem;
+	display: inline-block;
+	height: 3.75rem;
+	line-height: 3.75rem;
+}
+.include .change a{
+	color: #FF9501;
+}
+.include .warning{
+	width: 6.25rem;
+	height: 1.875rem;
+	background-color: #FFF3E3;
+	text-align: center;
+	line-height: 1.875rem;
+	margin-top: 3.75rem;
+	margin-left: 24.25rem;
+	color: #FF9501;
+}
+footer{
+	height: 3.75rem;
+	background-color: #fff;
+	margin-top: 2.0625rem;
+	text-align: center;
+	line-height: 3.75rem;
+	font-size: 0.875rem;
+}
+.help-block{
+	visibility: hidden;
+}
+#yzh{
+	color:#f0f;
+}

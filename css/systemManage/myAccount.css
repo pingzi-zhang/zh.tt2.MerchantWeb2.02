@@ -1,0 +1,163 @@
+.myAcc {
+  background-color: #fff;
+}
+.myAcc i {
+  color: red;
+}
+.myAcc p {
+  height: 4.375rem;
+  padding-top: 0.625rem;
+  margin-bottom: 1.2857142857142858rem;
+}
+.myAcc p span {
+  width: 7.5rem;
+  height: 3.125rem;
+  display: inline-block;
+  text-align: right;
+  line-height: 3.125rem;
+  padding-right: 0.625rem;
+}
+.myAcc p input {
+  width: 35.714285714285715rem;
+  height: 3.5714285714285716rem;
+  padding-left: 1.25rem;
+}
+.myAcc .help-block {
+  display: none;
+  color: #FF9501;
+}
+.myAcc .help-block s {
+  width: 0.875rem;
+  height: 0.875rem;
+  display: inline-block;
+  background: url("../../images/tips.png");
+  background-size: 100%, 100%;
+  vertical-align: top;
+  margin: 0.125rem 0.3125rem 0 0;
+}
+.myAcc .select {
+  height: 2.75rem;
+  line-height: 2.75rem;
+}
+.myAcc .select span {
+  width: 7.5rem;
+  display: inline-block;
+  text-align: right;
+  padding-right: 0.625rem;
+  float: left;
+}
+.myAcc .select div {
+  float: left;
+  width: 6.25rem;
+  margin-left: 0.25rem;
+}
+.myAcc .select div s {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #ccc;
+  float: left;
+  margin: 0.625rem 0.625rem 0 0px;
+}
+.myAcc .select .on {
+  color: #FF9501;
+}
+.myAcc .potoBtn{
+	display: inline-block;
+	top: -4.5rem;
+}
+
+.myAcc .webuploader-pick {
+    background: #ff9501;
+}
+.myAcc .select .on s {
+  border-color: #FF9501;
+  background: url("../../images/selected.png") -0.125rem -0.125rem;
+  background-size: 120% 120%;
+}
+#product_album_list{
+	width: 10rem;
+	height: 9.285714285714286rem;
+	display: inline-block;
+	background-size: 100% 100%;
+	margin: 1.4285714285714286rem 0;
+	background-image: url(../../images/poto.jpg);
+}
+.myAcc .product_album span{
+	 margin-top: 0.7142857142857143rem;
+}
+.myAcc .upload_photo {
+  height: 12.8125rem;
+  position: relative;
+}
+.myAcc .license_pic span {
+  width: 7.5rem;
+  height: 12.8125rem;
+  display: inline-block;
+  text-align: right;
+  line-height: 12.8125rem;
+  padding-right: 0.625rem;
+}
+.myAcc .license_pic .upload_photo {
+  position: absolute;
+  top: 0.625rem;
+  left: 6.25rem;
+}
+.myAcc .license_pic .upload_photo .tips_suc {
+  position: absolute;
+  top: 1.875rem;
+  left: 4.375rem;
+}
+.myAcc .license_pic .upload_photo #thelist {
+  display: none;
+  width: 12.5rem;
+  height: 12.5rem;
+  position: absolute;
+}
+.myAcc .license_pic .upload_photo #filePicker .webuploader-pick {
+  margin-top: 1.25rem;
+  float: left;
+  width: 9.285714285714286rem;
+  height: 9.285714285714286rem;
+  background: url("../../images/photo.png");
+  background-size: 100% 100%;
+  margin-left: 1.5625rem;
+}
+.myAcc .agreement input {
+  width: 35.714285714285715rem;
+  background: url("../../images/date.png") no-repeat 32.857142857142854rem center;
+}
+.myAcc .product_album span {
+  width: 7.5rem;
+  display: inline-block;
+  text-align: right;
+  padding-right: 0.625rem;
+  margin-top: 6rem;
+  float: left;
+}
+.myAcc footer {
+  margin-top: 1.875rem;
+  height: 12.1875rem;
+  border-top: 20px solid #F5F5F5;
+  padding-left: 7rem;
+  background-color: #f5f5f5;
+}
+.myAcc footer a,
+.myAcc footer input {
+  display: inline-block;
+  line-height: 3.125rem;
+  text-align: center;
+  width: 9.375rem;
+  height: 3.125rem;
+  background-color: #FF9501;
+  color: #fff;
+  margin: 2.5rem 2.5rem 0 0;
+}
+.blank {
+  width: 100%;
+  height: 1.4285714285714286rem;
+  background-color: #f5f5f5;
+}
+body {
+  background-color: #f5f5f5;
+}
+/*# sourceMappingURL=myAccount.css.map */

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>登录</title>
+</head>
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/login.css">
+<body>
+  <form class="login">
+      <img src="../images/TT_logo.png" alt="">
+      <div class="user_name">
+          <input id="tel" type="tel" name="username" placeholder="手机号">
+          <span>*您输入的手机号错误,请重新输入</span>
+      </div>
+      <div class="password">
+          <input id="psw" type="password" name="password" placeholder="密码">
+          <span>*您输入的密码有误</span>
+      </div>
+      <div class="remember_pwd">
+          <em class="select">
+              <img src="../images/selected.png">
+          </em>
+          <span>记住我</span>
+          <a href="../html/systemManage/resetPsw.html">忘记密码?</a>
+      </div>
+      <button type="button" class="login_btn">登录</button>
+  </form>
+  <footer>Copyright © 2016 traveltailor.cn All Rights Reserved 蜀ICP备16021940号-2</footer>
+  <script src="../js/Config.js"></script>
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../js/crypto-js.js"></script>
+  <script src="../js/Global.js"></script>
+  <script src="../js/common.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+</html>

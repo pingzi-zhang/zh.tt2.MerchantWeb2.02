@@ -1,0 +1,71 @@
+body{
+	background-color: #F5F5F5;
+	height: 63.875rem;
+}
+nav{
+	height: 3.75rem;
+	background-color: #FF9501;
+	padding-right: 24.0625rem;
+	padding-left: 22.5625rem;
+	/* line-height: 3.75rem; */
+}
+nav span{
+	display: inline-block;
+	width: 0.0625rem;
+	height: 1.25rem;
+	background-color: #fff;
+	margin-top: 1.25rem;
+	float: left;
+	margin-left: 3rem;
+}
+nav img{
+	float: left;
+	margin-top: 0.4rem;
+}
+nav a{
+	font-size: 0.875rem;
+	display: inline-block;
+	height: 3.75rem;
+	line-height: 3.75rem;
+	float: left;
+	margin-left: 1.0625rem;
+}
+nav a:last-child{
+	float: right;
+}
+.father{
+	height: 60.125rem;
+	/* position: relative; */
+	padding-top: 24.5625rem
+}
+.father .content{
+	width: 18.125rem;
+	height: 3.125rem;
+	margin: 0 auto;
+}
+.father .content img{
+	float: left;
+}
+.father .content .text{
+	float: right;
+	width: 13.625rem;
+	height: 2.875rem;
+}
+.father .content .text p:first-child{
+	font-size: 0.875rem;
+	color: #737373
+;}
+.father .content .text p:last-child{
+	margin-top: 0.9375rem;
+	color: #8C8C8C;
+}
+.father .content .text a,span{
+	color: #FF9501
+;}
+footer{
+	height: 3.75rem;
+	background-color: #fff;
+	text-align: center;
+	line-height: 3.75rem;
+	font-size: 0.875rem;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>重置密码</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+    <link href="../../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/systemManage/rePswSuccess.css">
+    <script language="javascript" type="text/javascript"> 
+		var i = 4; 
+		var intervalid; 
+		intervalid = setInterval("fun()", 1000); 
+		function fun() { 
+		if (i == 0) { 
+			clearInterval(intervalid);
+			window.location.href = "../orderManage/orderlist.html";
+		} 
+		document.getElementById("mes").innerHTML = i; 
+		i--; 
+		} 
+</script> 
+</head>
+<body>
+	<div class="father">
+		<div class="content">
+			<img src="../../images/resetpassword.png" height="48" width="48">
+			<div class="text">
+				<p>信息保存成功<a href="../orderManage/orderlist.html">返回列表页</a></p>
+				<p><span id="mes">4</span>秒后自动跳转到列表页</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

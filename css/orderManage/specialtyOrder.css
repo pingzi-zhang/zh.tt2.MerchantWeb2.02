@@ -1,0 +1,304 @@
+@charset "utf-8";
+.bgc {
+  height: 1.25rem;
+  background-color: #F5F5F5;
+}
+.bgd {
+  background-color: #FF9501;
+}
+.orderManage {
+  font-size: 1rem;
+  padding-top: 0rem;
+  margin-bottom: 4.352857142857142rem;
+}
+.orderManage .table {
+  margin-top: 0rem;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0px !important;
+}
+.orderManage .table th {
+  height: 3.142857142857143rem;
+  height: 3.142857142857143rem;
+  line-height: 3.142857142857143rem;
+  line-height: 3.142857142857143rem;
+  background-color: #fffaf2;
+  border: none;
+}
+.orderManage .table th:first-child {
+  padding-left: 2.5rem;
+}
+.orderManage .table td {
+  height: 8.571428571428571rem;
+  width: 11.625rem;
+  border-top: none;
+  position: relative;
+  border-bottom: 1px solid #E6E6E6;
+  padding: 0 1rem;
+  padding-top: 3rem;
+}
+.orderManage .table td:first-child {
+  width: 12.5rem;
+  padding-left: 2rem;
+}
+.orderManage .table td:nth-child(2) {
+  width: 12rem;
+}
+.orderManage .table td:nth-child(2) img {
+  width: 7.142857142857143rem;
+  width: 7.142857142857143rem;
+  height: 5.357142857142857rem;
+  height: 5.357142857142857rem;
+}
+.orderManage .table td:nth-child(3) {
+  width: 11rem;
+}
+.orderManage .table td:nth-child(4) {
+  width: 16.75rem;
+}
+.orderManage .table td:nth-child(5) {
+  width: 9.25rem;
+}
+.orderManage .table td:nth-child(6) {
+  width: 9.375rem;
+}
+.orderManage .table img {
+  width: 1.375rem;
+  height: 1.375rem;
+  margin-right: 1.25rem;
+}
+.orderManage .table a {
+  margin-right: 0.625rem;
+  color: #000;
+}
+.orderManage .table span {
+  margin-right: 0.625rem;
+  color: #000;
+  cursor: pointer;
+}
+footer .page p {
+  position: fixed;
+  left: 2rem;
+  bottom: 1.8rem;
+  /*margin-left: 2rem;*/
+}
+.page {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 4.571428571428571rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.page .paging{
+  position: fixed;
+  right: 2rem;
+  bottom: 1.8rem;
+  margin: 0;
+}
+.page .paging a,
+.page .paging span {
+  margin-left: 0.6125rem;
+  color: #666666;
+}
+footer .page span{
+	color: #ff9501;
+}
+.page .paging .current
+ {
+  color: #ff9501;
+}
+.page .paging .prev,
+.page .paging .next
+ {
+  color: #666;
+}
+p.content{
+    margin: 2.5rem 0 0 2.5rem;
+    color: #ff9501;
+    display: none;
+}
+.layer_bg1 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.layer_bg1 .layer_publish {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #fff;
+  width: 50rem;
+}
+.layer_bg1 .layer_publish header {
+  width: 100%;
+  padding-left: 1.4285714285714286rem;
+  height: 4.285714285714286rem;
+  line-height: 4.285714285714286rem;
+  background-color: #FF9501;
+}
+.layer_bg1 .layer_publish header img {
+  float: right;
+  margin: 1.0714285714285714rem 1.0714285714285714rem 0 0;
+  cursor: pointer;
+}
+.layer_bg1 .layer_publish .layer_content {
+  width: 100%;
+  height: 12.5rem;
+  padding-left: 2.857142857142857rem;
+}
+.layer_bg1 .layer_publish .layer_content p {
+  height: 7.142857142857143rem;
+  line-height: 7.142857142857143rem;
+  color: #000;
+}
+.layer_bg1 .layer_publish .layer_content input {
+  float: left;
+  width: 7.142857142857143rem;
+  height: 2.857142857142857rem;
+}
+.layer_bg1 .layer_publish .layer_content .cancel {
+  background-color: #fff;
+  color: #000;
+}
+.layer_bg1 .layer_publish .layer_content .certain {
+  background-color: #FF9501;
+  color: #fff;
+  margin-left: 1.4285714285714286rem;
+}
+.modal-content{
+	width: 32rem;
+}
+.modal-content .btn-primary {
+    color: #fff;
+    background-color:#ff9501;
+    border-color: #ff9501;
+}
+.modal-content .btn-primary:active {
+    color: #fff;
+    background-color:#ff9501;
+    border-color: #ff9501;
+}
+/*# sourceMappingURL=foodOrders.css.map */
+.modal-content{
+  background-color: #FAFAFA;
+}
+
+.modal-header{
+  background-color: #ff9501;
+  color: #fff;
+}
+
+.modal-body .dl-horizontal dd input {
+  padding-left: 1.7857142857142858rem;
+  display: inline-block;
+  width: 25rem;
+  height: 3.4285714285714284rem;
+}
+.modal-footer{
+  text-align: center;
+}
+
+.modal-body .dl-horizontal dt{
+  width: 12.5rem;
+  color: #a9a9a9;
+  line-height: 10.714285714285714rem;
+}
+.modal-body .dl-horizontal dd{
+  margin-left: 13.928571428571429rem;
+  line-height: 12.428571rem;
+}
+.modal-body .dl-horizontal dd p{
+  margin-top: 3.5714285714285716rem;
+  line-height: 1.7857142857142858rem;
+  color: #747474;
+}
+.modal-footer #dis,#auditBtn,#confirmBtn{
+  width: 10.571428571428571rem;
+  height: 3.4285714285714284rem;
+}
+.modal-footer #dis{
+  color: #ff9501;
+  background-color: #FAFAFA;
+  border-color: #ff9501;
+}
+.modal-footer  #auditBtn{
+  background-color: #ff9501;
+  margin-left: 2.857142857142857rem;
+}
+#loadImg{
+	display: none;
+	margin-left: 54rem;
+}
+#Modal .modal-content,
+#myModal .modal-content{
+  background-color: #FAFAFA;
+}
+#Modal  .modal-body .dl-horizontal dd input,
+#myModal .modal-body .dl-horizontal dd input {
+  padding-left: 1.7857142857142858rem;
+  display: inline-block;
+  width: 22rem;
+  height: 3.4285714285714284rem;
+}
+#Modal  .modal-footer,
+#myModal .modal-footer{
+  text-align: center;
+}
+
+#myModal .modal-body .dl-horizontal dt{
+  width: 12.5rem;
+  color: #a9a9a9;
+  line-height: 10.714285714285714rem;
+}
+#myModal .modal-body .dl-horizontal dd{
+  margin-left: 13.928571428571429rem;
+}
+#myModal .modal-body .dl-horizontal dd p{
+  margin-top: 3.5714285714285716rem;
+  line-height: 1.7857142857142858rem;
+  color: #747474;
+}
+#myModal .modal-footer #dis,#auditBtn{
+  width: 10.571428571428571rem;
+  height: 3.4285714285714284rem;
+}
+#myModal .modal-footer #dis{
+  background-color: #FAFAFA;
+}
+#myModal .modal-footer  #auditBtn{
+  margin-left: 2.857142857142857rem;
+}
+
+
+#Modal .modal-body .dl-horizontal dt{
+  width: 4.857142857142857rem;
+  color: #9a9a9a;
+  line-height: 5.714285714285714rem;
+}
+#Modal .modal-body .dl-horizontal dd{
+  line-height: 5.714285714285714rem;
+  margin-left: 5.571428571428571rem;
+}
+#Modal .modal-footer #dismiss,#submitBtn{
+  width: 10.571428571428571rem;
+  height: 3.4285714285714284rem;
+}
+#Modal .num,
+#Modal .pw{
+	line-height: 2.714285714285714rem;
+}
+.hold-clock{
+	display: none;
+	position: absolute;
+	top: 4rem;
+	right: 0;
+	width: 25rem;
+	color: #ffac4f;
+}
